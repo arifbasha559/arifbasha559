@@ -1,11 +1,12 @@
 import { useState } from 'react'
 
+
 const Navbar = () => {
     const links = ['Home', 'About', 'Projects', 'Blog', 'Contact'];
     const urls = ['#', '#aa', '#a', '#d', '#a'];
     const [showMenu, setShowMenu] = useState(false);
-    return (<nav className="flex flex-row justify-between items-center min-h-20 relative">
-        <h1 className="text-2xl sm:text-3xl font-medium bg-gradient-to-r bg-clip-text text-transparent from-[#ae00ff] to-[#001eff] cursor-pointer mb-4 sm:mb-0">Arif Basha</h1>
+    return (<nav className="flex flex-row justify-between items-center min-h-20 relative  backdrop-blur-md bg-[#00000080] rounded-br-3xl rounded-bl-3xl px-5">
+        <h1 className="text-2xl sm:text-3xl font-medium bg-gradient-to-r bg-clip-text text-transparent from-[#e100ff] to-[#001eff] transition-all duration-75 hover:bg-gradient-to-l cursor-pointer mb-4 sm:mb-0">Arif Basha</h1>
         <div className="">
 
             <button
