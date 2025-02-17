@@ -32,7 +32,7 @@ const App = () => {
   return (
     <div ref={vantaRef}>
 
-    <div className=" bg-[#00000061] px-4 sm:px-6 md:px-10 lg:px-20 text-white max-w-screen min-w-screen min-h-screen">
+    <div className=" bg-[#00000061] px-0 sm:px-6 md:px-10 lg:px-20 text-white max-w-screen min-w-screen min-h-screen">
       <Navbar />
       
     </div>
