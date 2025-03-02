@@ -2,8 +2,36 @@
 
 *{
   box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  
+}
+.font-poppins{
   font-family: 'Poppins', sans-serif;
+}
+::selection{
+  background-color: #666666;
+  color: white;
 }
 body{
   background-color: black;
+  scrollbar-width: thin;
+  scrollbar-color: #666666 #121212;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666666;
+  border-radius: 10px;
+}
+
+.photo{
+  background-image: url('./profile.jpg');
+  background-color: antiquewhite;
 }
