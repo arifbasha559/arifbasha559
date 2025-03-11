@@ -1,15 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
-  box-sizing: border-box;
-  /* font-family: 'Poppins', sans-serif; */
-  
-}
+
 .font-poppins{
   font-family: 'Poppins', sans-serif;
 }
+
+
+* {
+  box-sizing: border-box;
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  /* color: black; */
+  font-family: sans-serif;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-link:hover::after
+ {
+  transform: scaleX(1);
+}
+
+.activate::after {
+  transform: scaleX(1);
+}
+
+.nav-link::after{
+  transform-origin: left;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.blinking-border {
+  border-right: 4px solid #F34629;
+  animation: blinkCursor 0.8s infinite;
+}
+
+
+
+
+
 ::selection{
-  background-color: #666666;
+  background-color: #F34629;
   color: white;
 }
 body{
@@ -31,7 +82,3 @@ body{
   border-radius: 10px;
 }
 
-.photo{
-  background-image: url('./profile.jpg');
-  background-color: antiquewhite;
-}

@@ -1,27 +1,24 @@
-import './App.css';
-import Hero from './Components/Hero';
-import Navbar from './Components/Navbar';
-
+import "./App.css";
+import Hero from "./Components/Hero";
+import Navbar from "./Components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
-
-  
-
-  ;
   return (
-    <div  className=''>
-      <div className="bg-[#00000061] max-w-screen font-mono min-h-screen">
+    <BrowserRouter>
+        
+        <div className="bg-[#00000061] relative max-w-screen font-poppins min-h-screen px-0 sm:px-6 md:px-10 lg:px-20 text-white">
+          <Navbar />
+        <div className="px-3 lg:px-0  ">
+      <Routes>
 
-        <div className=" px-0 sm:px-6 md:px-10 lg:px-20 text-white ">
-          <div className="max-w-full min-w-full min-h-screen ">
-
-            <Navbar />
-            <Hero />
-          </div>
-
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<Hero />} />
+      </Routes>
         </div>
-      </div>
-    </div>
+        </div>
+    
+    </BrowserRouter>
   );
 };
 
