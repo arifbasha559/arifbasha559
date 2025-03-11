@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="hero flex flex-col lg:flex-row justify-between items-center gap-10 w-full h-[calc(100vh-90px)]">
       <div className="left h-1/2 w-full lg:w-1/2 lg:h-full">
         <div className="flex w-full h-full p-20 select-none justify-center">
-          <img src=".\src\assets\hero-section.jpg" className="rounded-full shadow-[0_0_25px_#F34629]" alt=""  />
+          <img src=".\hero-section.jpg" className="rounded-full shadow-[0_0_25px_#F34629]" alt=""  />
         </div>
       </div>
       <div className="right h-1/2 w-full lg:w-1/2 lg:h-full px-5 lg:px-0 text-2xl flex flex-col justify-center gap-2">
