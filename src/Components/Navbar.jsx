@@ -33,9 +33,9 @@ const Navbar = () => {
       <div className={`btn flex gap-2 lg:static absolute ${nav}  text-sm font-medium gap-10 -z-10 py-20 lg:py-0 h-fit  lg:translate-0 flex-col justify-end items-center  w-full lg:flex-row top-14 left-0 bg-black z-index-[-1] transition-all duration-500 ease-in-out`}>
 
         <Link onClick={() => { closeMenu() }} to="/"        className={`w-fit lg:ml-10 ml-0 ${location.pathname==='/' ?"activate text-[#F34629]":"" } hover:text-[#F34629] after:bg-[#F34629] nav-link  px-2   py-0.5   text-center`} title="Home" >Home</Link>
+        <Link onClick={() => { closeMenu() }} to="/about"    className={`w-fit ${location.pathname==='/about'?"activate text-[#F34629]":"" } nav-link  hover:text-[#F34629] after:bg-[#F34629] px-2  py-0.5 rounded-lg  text-center`} title="About" >About</Link>
         <Link onClick={() => { closeMenu() }} to="/services"    className={`w-fit ${location.pathname==='/services'?"activate text-[#F34629]":"" } nav-link  hover:text-[#F34629] after:bg-[#F34629] px-2  py-0.5 rounded-lg  text-center`} title="Services" >Services</Link>
-        <Link onClick={() => { closeMenu() }} to="/skills"    className={`w-fit ${location.pathname==='/skills'?"activate text-[#F34629]":"" } nav-link hover:text-[#F34629] after:bg-[#F34629] px-2  py-0.5 rounded-lg  text-center`} title="Skills" >Skills</Link>
-        <Link onClick={() => { closeMenu() }} to="/education"   className={`w-fit ${location.pathname==='/education'?"activate text-[#F34629]":"" } nav-link hover:text-[#F34629] after:bg-[#F34629] px-2  py-0.5 rounded-lg  text-center`} title="Education" >Educaion</Link>
+        <Link onClick={() => { closeMenu() }} to="/projects"   className={`w-fit ${location.pathname==='/projects'?"activate text-[#F34629]":"" } nav-link hover:text-[#F34629] after:bg-[#F34629] px-2  py-0.5 rounded-lg  text-center`} title="Education" >Projects</Link>
         <Link onClick={() => { closeMenu() }} to="/experience" className={`w-fit ${location.pathname==='/experience'?"activate text-[#F34629]":"" } nav-link hover:text-[#F34629] after:bg-[#F34629] px-2  py-0.5 rounded-lg  text-center`} title="Experience" >Experience</Link>
         <Link onClick={() => { closeMenu() }} to="/contact" className={`w-fit ${location.pathname==='/contact'?"activate text-[#F34629]":"" } nav-link hover:text-[#F34629] after:bg-[#F34629] px-2  py-0.5 rounded-lg  text-center`} title="Contact" >Contact</Link>
         
@@ -47,7 +47,7 @@ const Navbar = () => {
         
         
         <button onClick={toggleMenu} className={`menu lg:hidden p-1.5 flex  items-center rounded-full outline-none  `}>
-          <IconContext.Provider value={{ className: `text-lg ` }}>
+          <IconContext.Provider value={{ className: `text-3xl ` }}>
             <IoMenu />
           </IconContext.Provider>
 

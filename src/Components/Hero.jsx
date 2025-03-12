@@ -1,3 +1,4 @@
+import { IconContext } from "react-icons";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
@@ -6,17 +7,21 @@ import { Typewriter } from "react-simple-typewriter";
 // Desc: Hero component for the landing page
 const Hero = () => {
   return (
-    <div className="hero flex flex-col lg:flex-row justify-between items-center gap-10 w-full h-[calc(100vh-90px)]">
-      <div className="left h-1/2 w-full lg:w-1/2 lg:h-full">
+    <div className="hero flex flex-col lg:flex-row justify-between items-center gap-0 lg:gap-10 w-full h-[calc(100vh-90px)]">
+      <div className="left h-2/3 w-full lg:w-1/2 lg:h-full">
         <div className="flex w-full h-full p-20 select-none justify-center">
-          <img src=".\hero-section.jpg" className="rounded-full shadow-[0_0_25px_#F34629]" alt=""  />
+          <img
+            src=".\hero-section.jpg"
+            className="rounded-full shadow-[0_0_25px_#F34629] hover:border border-[#F34629]"
+            alt=""
+          />
         </div>
       </div>
-      <div className="right h-1/2 w-full lg:w-1/2 lg:h-full px-5 lg:px-0 text-2xl flex flex-col justify-center gap-2">
-        <h1 className="text-4xl font-bold">
+      <div className="right h-1/3 w-full lg:w-1/2 lg:h-full px-5 lg:px-0 text-2xl flex flex-col justify-center gap-2">
+        <h1 className="text-2xl font-bold">
           Hi, It&apos;s <span className="text-[#F34629] ">Arif Basha</span>
         </h1>
-        <h2 className="text-2xl font-medium  ">
+        <h2 className="text-3xl font-medium  ">
           I&apos;m a{" "}
           <span className="border-[#F34629] border-r-4 pr-1 text-[#F34629] blinking-border text-wrap">
             <Typewriter
@@ -35,26 +40,49 @@ const Hero = () => {
             />
           </span>
         </h2>
-        <p className="text-lg">
+        <p className="text-lg w-3/4 ">
           {/* I craft engaging and dynamic web experiences by combining design and technology. With a passion for clean, modern aesthetics and seamless user interactions, I specialize in creating responsive websites that leave a lasting impact. Whether it’s designing sleek user interfaces, coding front-end solutions, or enhancing user experience, I thrive on turning ideas into reality. Always eager to explore new trends and innovations, I continuously push the boundaries of creativity and functionality.         */}
           I create engaging web experiences with a focus on modern design and
-          seamless user interactions. Passionate about clean aesthetics and
-          functionality, I specialize in responsive websites that leave a
-          lasting impact. Constantly exploring new trends, I push the boundaries
-          of creativity and innovation.
+          seamless user interactions.{" "}
+          <span className="hidden lg:inline">
+            Passionate about clean aesthetics and functionality, I specialize in
+            responsive websites that leave a lasting impact. Constantly
+            exploring new trends, I push the boundaries of creativity and
+            innovation.
+          </span>
         </p>
-        <div className="btn flex gap-5 mt-4">
-          <Link  to="https://www.linkedin.com/in/arifbasha559/" className="btn hover:bg-[#F34629] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2 rounded-full ">
-            <FaLinkedin />
+        <div className="btn flex gap-5 mt-4 ">
+          <Link
+            to="https://www.linkedin.com/in/arifbasha559/"
+            className="btn hover:bg-[#F34629] hover:text-black   hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2.5 rounded-full "
+          >
+            <IconContext.Provider value={{ className: `text-3xl ` }}>
+              <FaLinkedin />
+            </IconContext.Provider>
           </Link>
-          <Link  to="https://www.github.com/Arifbasha559/" className="btn hover:bg-[#F34629] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2 rounded-full">
-            <FaGithub />
+          <Link
+            to="https://www.github.com/Arifbasha559/"
+            className="btn hover:bg-[#F34629] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2.5 rounded-full"
+          >
+            <IconContext.Provider value={{ className: `text-3xl ` }}>
+              <FaGithub />
+            </IconContext.Provider>
           </Link>
-          <Link  to="https://x.com/in/arifbasha559/" className="btn hover:bg-[#F34629] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2 rounded-full">
-            <FaXTwitter />
+          <Link
+            to="https://x.com/in/arifbasha559/"
+            className="btn hover:bg-[#F34629] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2.5 rounded-full"
+          >
+            <IconContext.Provider value={{ className: `text-3xl ` }}>
+              <FaXTwitter />
+            </IconContext.Provider>
           </Link>
-          <Link  to="https://www.instagram.com/arif_off04/" className="btn hover:bg-[#F34629] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2 rounded-full">
-            <FaInstagram />
+          <Link
+            to="https://www.instagram.com/arif_off04/"
+            className="btn hover:bg-[#F34629] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2.5 rounded-full"
+          >
+            <IconContext.Provider value={{ className: `text-3xl ` }}>
+              <FaInstagram />
+            </IconContext.Provider>
           </Link>
         </div>
       </div>
