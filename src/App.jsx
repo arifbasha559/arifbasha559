@@ -5,6 +5,8 @@ import Navbar from "./Components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Services from "./Components/Services";
 import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />  
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<><Contact /> <Footer /></>} />
       </Routes>
         </div>
         <div className="px-3 lg:px-0 block lg:hidden">
@@ -26,6 +29,8 @@ const App = () => {
           <div id="about"><About /></div>
           <div id="services"><Services /></div>
           <div id="projects"><Projects /></div>
+          <div id="contact"><Contact /></div>
+          <div id="footer"><Footer /></div>
         </div>
         </div>
     

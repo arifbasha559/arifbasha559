@@ -78,11 +78,12 @@ const Projects = () => {
               <p className="m-0 text-[20px] text-black font-bold">
                 {item.title}
               </p>
-              <p className="my-[5px] text-[12px] text-gray-300 leading-[1.4]">
+              <p className="my-[5px] text-[12px] text-gray-300 leading-[1.4] ">
                 {item.message}
               </p>
               <div className="">
                 <Link
+                tabIndex="-1"
                   to={item.preview}
                   className="inline-flex gap-2 items-center px-3 py-2 text-sm size-fit rounded-xl bg-black  text-white transition-all duration-500 ease-in-out hover:bg-transparent hover:border border-[#fff]"
                 >
@@ -91,6 +92,7 @@ const Projects = () => {
                   </IconContext.Provider>
                 </Link>
                 <Link
+                tabIndex="-1"
                   to={item.code}
                   className=" inline-flex gap-2 items-center px-3 py-2 text-sm rounded-xl size-fit bg-transparent text-white border border-[#fff] ml-2 transition-all duration-500 ease-in-out hover:bg-black"
                 >
