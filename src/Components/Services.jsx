@@ -54,14 +54,14 @@ const Services = () => {
       </div>
       {/* cards section */}
       <div className="flex flex-col w-full lg:w-3/4 mx-auto min-h-[80vh]  text-gray-300 justify-center items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5  h-full px-10 py-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5  h-full px-10 py-10">
           {data.map(
             (item, index) => (
               console.log(item),
               (
                 <div
                   key={index}
-                  className="card grid-cols-1 lg:grid-cols-3   overflow-hidden flex justify-around flex-col py-5 items-center relative text-left rounded-lg h-full shadow-[0_2px_10px_rgba(255,255,255,0.2)] bg-black hover:bg-[#f34729aa] transition-all duration-300 ease-in-out group"
+                  className="card grid-cols-2 lg:grid-cols-3   overflow-hidden flex justify-around flex-col py-5 items-center relative text-left rounded-lg h-full shadow-[0_2px_10px_rgba(255,255,255,0.2)] bg-black hover:bg-[#f34729aa] transition-all duration-300 ease-in-out group"
                 >
                   <div className="header ">
                     <div className="image flex mx-auto bg-[#F34629] group-hover:text-black group-hover:bg-white  flex-shrink-0 justify-center items-center rounded-full p-3 size-fit transition-all duration-300 ease-in-out">

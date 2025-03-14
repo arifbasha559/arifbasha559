@@ -18,8 +18,8 @@ const Hero = () => {
         </div>
       </div>
       <div className="right h-1/3 w-full lg:w-1/2 lg:h-full px-5 lg:px-0 text-2xl flex flex-col justify-center gap-2">
-        <h1 className="text-2xl font-bold">
-          Hi, It&apos;s <span className="text-[#F34629] ">Arif Basha</span>
+        <h1 className="text-2xl ">
+          Hi, It&apos;s <span className="text-[#F34629] font-semibold">Arif Basha</span>
         </h1>
         <h2 className="text-3xl font-medium  ">
           I&apos;m a{" "}

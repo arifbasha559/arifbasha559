@@ -10,7 +10,7 @@ const Contact = () => {
           Contact Me
         </h2>
       </div>
-        <div className="flex flex-col-reverse w-full lg:flex-row justify-between items-center gap-5 px-20 py-10">
+        <div className="flex flex-col-reverse w-full lg:flex-row justify-between items-center gap-5 px-5 xs:px-10 md:px-20 py-10">
           <div className="w-full lg:w-1/2 bg-black p-10  rounded-lg shadow-[0_0_20px_#F34629]">
             <h1 className="text-3xl font-bold text-white">Get in touch</h1>
             <div className="flex py-5">
