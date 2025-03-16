@@ -40,7 +40,7 @@ const Footer = () => {
             <h2 className="text-2xl text-white text-center w-full font-bold mb-4">Social Media</h2>
             <div className="flex gap-3">
               <a
-                href="https://twitter.com/ArifBasha559"
+                href="https://x.com/ArifBasha559"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-all duration-300 ease-in-out"
@@ -64,7 +64,7 @@ const Footer = () => {
                 <FaLinkedinIn className="  hover:text-blue-500 rounded-lg p-1 w-10 h-10" />
               </a>
               <a
-                href="https://www.linkedin.com/in/arifbasha559/"
+                href="https://www.instagram.com/arif_off04/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-all  duration-300 ease-in-out"

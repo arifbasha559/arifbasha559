@@ -69,7 +69,7 @@ const Hero = () => {
             </IconContext.Provider>
           </Link>
           <Link
-            to="https://x.com/in/arifbasha559/"
+            to="https://x.com/arifbasha559/"
             className="btn hover:bg-[#F34629] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2.5 rounded-full"
           >
             <IconContext.Provider value={{ className: `text-3xl ` }}>
