@@ -4,18 +4,18 @@ import { SiRefinedgithub } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F34629]  py-10">
+    <footer className="bg-[#F34629]  pt-10 pb-5">
       <div className="container mx-auto px-4">
         {/* Main Content */}
         <div className="flex flex-col  md:flex-row justify-between items-center gap-8">
           {/* Contact Information */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-            <h2 className="text-2xl text-white font-bold mb-4">Contact Me</h2>
-            <p className="text-lg text-white flex items-center mb-3">
+            <h2 className="text-2xl text-white font-bold mb-2">Contact Me</h2>
+            <p className="text-lg text-white flex items-center mb-1">
               <IoLocation className="inline-block mr-2" />
               Ranipet, TamilNadu, India.
             </p>
-            <p className="text-lg text-white flex hover:text-black  items-center mb-3">
+            <p className="text-lg text-white flex hover:text-black  items-center mb-1">
               <IoMail className="inline-block mr-2" />
               <a
                 href="mailto:arifbasha559@gmail.com"
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright Section */}
-        <p className="text-center text-lg text-white mt-10">
+        <p className="text-center text-lg text-white ">
           &copy; {new Date().getFullYear()} Arif Basha. All rights reserved.
         </p>
       </div>
