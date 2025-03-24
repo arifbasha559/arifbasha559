@@ -14,13 +14,14 @@ const Contact = () => {
   useEffect(() => {
     // Title animation (Fade-in + Slide-up)
     gsap.from(titleRef.current, {
-      opacity: 0,
       y: 50,
-      duration: 1,
-      ease: "power3.out",
+      opacity: 0,
+      
       scrollTrigger: {
         trigger: titleRef.current,
-        start: "top 80%",
+        start: "top 60%",
+        end: "bottom 60%",
+        scrub: 1,
         toggleActions: "play none none reverse",
       },
     });
@@ -34,7 +35,9 @@ const Contact = () => {
       ease: "power3.out",
       scrollTrigger: {
         trigger: formRef.current,
-        start: "top 85%",
+        start: "top 80%",
+        end: "bottom 80%",
+        scrub: 1,
         toggleActions: "play none none reverse",
       },
     });
@@ -46,7 +49,9 @@ const Contact = () => {
         repeat: -1,
         duration: 1,
         yoyo: true,
+        filter: "grayScale(0.5)",
         ease: "power1.inOut",
+        
       });
     }
   }, []);
@@ -56,7 +61,7 @@ const Contact = () => {
       <div className="flex w-full flex-col justify-center items-center relative">
         <h2
           ref={titleRef}
-          className="text-3xl text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#F34629] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out before:content-[''] before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2 before:h-[2.5px] before:bg-[#F34629] before:absolute before:-bottom-2.5"
+          className="text-3xl mb-10 text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#F34629] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out before:content-[''] before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2 before:h-[2.5px] before:bg-[#F34629] before:absolute before:-bottom-2.5"
         >
           Contact Me
         </h2>

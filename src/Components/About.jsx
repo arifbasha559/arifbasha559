@@ -106,7 +106,15 @@ const About = () => {
               experience, I thrive on turning ideas into reality.
             </p>
             <div className="" ref={buttonRef}>
-              <button className="bg-[#F34629] text-white py-2 px-8 mb-10 lg:px-16 text-lg rounded-lg hover:bg-[#e63a1f] cursor-pointer transition-colors duration-300">
+              <button
+                className="bg-[#F34629] text-white py-2 px-8 mb-10 lg:px-16 text-lg rounded-lg hover:bg-[#e63a1f] cursor-pointer transition-colors duration-300"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/path/to/Arifs resume.pdf'; // Replace with the actual path to your PDF
+                  link.download = 'Arif_Basha_CV.pdf'; // Replace with the desired file name
+                  link.click();
+                }}
+              >
                 Download CV
               </button>
             </div>
