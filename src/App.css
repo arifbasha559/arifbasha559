@@ -59,7 +59,7 @@
 
 
 
-::selection{
+body::selection{
   background-color: #F34629;
   color: white;
 }

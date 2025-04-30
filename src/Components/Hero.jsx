@@ -4,6 +4,7 @@ import { IconContext } from "react-icons";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Typewriter } from "react-simple-typewriter";
+import { Helmet } from "react-helmet";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -48,12 +49,13 @@ const Hero = () => {
       ref={heroRef}
       className="hero flex flex-col lg:flex-row justify-between items-center gap-0 lg:gap-10 w-full min-h-[calc(100vh-190px)]"
     >
-      <div className="left h-1/3 w-full lg:w-1/2 lg:h-full">
-        <div className="flex w-full px-20 h-3/4 select-none justify-center">
+      
+      <div className="left h-1/3 w-full lg:w-1/2 md:h-full my-auto ">
+        <div className="flex w-full px-20 h-3/4 select-none justify-center ">
           <img
             ref={imageRef}
             src=".\hero-section.jpg"
-            className="rounded-full lg:max-w-2/3 shadow-[0_0_25px_#F34629]"
+            className="rounded-full md:max-w-2/4  lg:max-w-2/3 shadow-[0_0_25px_#F34629]"
             alt=""
           />
         </div>
@@ -82,7 +84,8 @@ const Hero = () => {
               loop={false}
               cursorStyle="|"
               cursorColor="#F34629"
-              typeSpeed={70}
+              
+              typeSpeed={100}
               deleteSpeed={50}
               delaySpeed={1000}
               />

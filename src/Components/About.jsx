@@ -67,13 +67,15 @@ const About = () => {
   }, []);
 
   return (
-    <div>
+    <div  id="about">
       <div
-        id="about"
+        
         ref={aboutRef}
-        className="flex w-full flex-col justify-center items-center relative "
+        className="flex w-full flex-col justify-center items-center relative md:mt-[5.5rem]"
       >
-        <h2 className="text-3xl text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#F34629] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out before:content-[''] before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2 before:h-[2.5px] before:bg-[#F34629] before:absolute before:-bottom-2.5">
+        <h2 
+       
+        className="text-3xl text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#F34629] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out before:content-[''] before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2 before:h-[2.5px] before:bg-[#F34629] before:absolute before:-bottom-2.5">
           About Me
         </h2>
       </div>
@@ -107,7 +109,7 @@ const About = () => {
             </p>
             <div className="" ref={buttonRef}>
               <button
-                className="bg-[#F34629] text-white py-2 px-8 mb-10 lg:px-16 text-lg rounded-lg hover:bg-[#e63a1f] cursor-pointer transition-colors duration-300"
+                className="bg-[#F34629] selection:bg-black text-white py-2 px-8 mb-10 lg:px-16 text-lg rounded-lg hover:bg-[#e63a1f] cursor-pointer transition-colors duration-300"
                 onClick={() => {
                   const link = document.createElement('a');
                   link.href = '/path/to/Arifs resume.pdf'; // Replace with the actual path to your PDF

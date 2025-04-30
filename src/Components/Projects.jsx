@@ -1,7 +1,10 @@
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useEffect } from "react";
 import { IconContext } from "react-icons";
 import { FaGithub } from "react-icons/fa";
 import { IoLink } from "react-icons/io5";
-
+gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const data = [
     {
@@ -10,7 +13,8 @@ const Projects = () => {
         "is a modern, user-friendly blog platform designed for tech enthusiasts, developers, and curious minds.",
       image: "./tech-zen.png",
       preview: "https://tech-zen.vercel.app/",
-      code: "https://tech-zen.vercel.app/",
+      code: "https://github.com/arifbasha559/tech-zen",
+     
     },
     {
       title: "Mak Todos",
@@ -18,9 +22,58 @@ const Projects = () => {
         " is a minimalist and user-friendly todo application designed to help you organize your tasks efficiently.",
       image: "./Mak-todos.png",
       preview: "https://mak-todos.vercel.app/",
-      code: "https://mak-todos.vercel.app/",
+      code: "https://github.com/arifbasha559/mak-todos",
+
+    },
+    {
+      title: "Exposio Gallery",
+      message:
+        "A portfolio showcasing the beauty of light and shadow, capturing the essence of nature through our curated collection of photographs.",
+      image: "./exposio.png",
+      preview: "https://exposio-gallery.vercel.app/",
+      code: "https://github.com/arifbasha559/exposio",
     },
   ];
+  useEffect(() => {
+    
+  
+      // Animation for the "My Services" heading
+     
+      gsap.utils.toArray(".project-card").forEach((card, index) => {
+        let x = 0, y = 0;
+  
+        // Apply different animations based on the card's position
+        if (index  === 0) {
+          x = -100; // Left column
+        } else if (index  === 1) {
+          y = 50; // Middle column
+        } else if (index === 2) {
+          x = 100; // Right column
+        }
+  
+        gsap.fromTo(
+          card,
+          { opacity: 0, x, y, filter: "blur(10px)" },
+          {
+            opacity: 1,
+            x: 0,
+            y: 0,
+            filter: "blur(0px)",
+            duration: 0.8,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 75%",
+              end: "bottom 70%",
+  
+              toggleActions: "play none none reverse",
+              onEnter: () => gsap.to(card, { opacity: 1 }),
+              once: false,
+            },
+          });
+      });
+    }, []);
+  
   return (
     <div className="">
       <div className="flex w-full flex-col justify-center items-center  relative">
@@ -35,7 +88,7 @@ const Projects = () => {
             key={index}
           >
             <div
-              className="card group hidden relative w-full aspect-[16/9]  bg-black rounded-xl lg:flex items-center justify-center overflow-hidden perspective-1000 shadow-[0_0_5px_rgba(255,255,255,0.5)] transition-all duration-600 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:shadow-[0_8px_16px_rgba(255,255,255,0.2)]"
+              className="card project-card group hidden relative w-full aspect-[16/9]  bg-black rounded-xl lg:flex items-center justify-center overflow-hidden perspective-1000 shadow-[0_0_5px_rgba(255,255,255,0.5)] transition-all duration-600 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:shadow-[0_8px_16px_rgba(255,255,255,0.2)]"
               >
               {/* SVG Icon */}
               <div className="h-full ">
@@ -44,7 +97,7 @@ const Projects = () => {
                   src={item.image}
                   alt=""
                   />
-                <p className="m-0 absolute bottom-2 left-2 text-[20px] text-white ">
+                <p className="m-0 absolute bottom-2 left-2 text-[20px] text-white/50  ">
                   {item.title}
                 </p>
               </div>
@@ -54,13 +107,14 @@ const Projects = () => {
                 <p className="m-0 text-[20px] text-black font-bold">
                   {item.title}
                 </p>
-                <p className="my-[5px] text-[12px] text-gray-300 leading-[1.4] ">
+                <p className="my-[5px] text-[12px] text-white selection:bg-black leading-[1.4] ">
                   {item.message}
                 </p>
                 <div className="">
                   <a
                     tabIndex="-1"
-                    to={item.preview}
+                    href={item.preview}
+                    target="_blank"
                     className="inline-flex gap-2 items-center px-3 py-2 text-sm size-fit rounded-xl bg-black  text-white transition-all duration-500 ease-in-out hover:bg-transparent hover:border border-[#fff]"
                     >
                     <IconContext.Provider value={{ className: "text-lg" }}>
@@ -69,8 +123,9 @@ const Projects = () => {
                   </a>
                   <a
                     tabIndex="-1"
-                    to={item.code}
-                    className=" inline-flex gap-2 items-center px-3 py-2 text-sm rounded-xl size-fit bg-transparent text-white border border-[#fff] ml-2 transition-all duration-500 ease-in-out hover:bg-black"
+                    href={item.code}
+                    target="_blank"
+                    className=" inline-flex gap-2 items-center selection:bg-black px-3 py-2 text-sm rounded-xl size-fit bg-transparent text-white border border-[#fff] ml-2 transition-all duration-500 ease-in-out hover:bg-black"
                     >
                     <IconContext.Provider value={{ className: "text-lg" }}>
                       <FaGithub />

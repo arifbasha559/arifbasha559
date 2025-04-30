@@ -108,7 +108,8 @@ const Services = () => {
 
   return (
     <div>
-      <div className="Services-logo flex w-full h-20 flex-col justify-center items-center relative">
+      <div  className="Services-logo flex w-full h-20 flex-col justify-center items-center relative">
+
         <h2 className="text-3xl text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#F34629] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out  before:content-['']  before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2  before:h-[2.5px] before:bg-[#F34629] before:absolute before:-bottom-2.5">
           My Services
         </h2>

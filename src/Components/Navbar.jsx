@@ -3,6 +3,7 @@ import { IconContext } from "react-icons";
 import { IoMenu } from "react-icons/io5";
 import "../App.css";
 import gsap from "gsap";
+import { Helmet } from "react-helmet";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -75,6 +76,9 @@ const Navbar = () => {
   }, []);
   return (
     <div className="h-20 mb-2 bg-black px-2 lg:px-0 flex items-center justify-between sticky top-0 left-10 z-50 mx-auto">
+      <Helmet>
+        <title>{ activeSection === "hero" ?"":activeSection.charAt(0).toUpperCase()+activeSection.slice(1).toLowerCase()+" | "}Arif Basha</title>
+      </Helmet>
       <div className="logo">
         <a
           to="/"

@@ -16,7 +16,7 @@ const App = () => {
 
         <div className="px-3 lg:px-0 flex flex-col h-full overflow-x-hidden">
           <section
-            className="flex justify-center items-center flex-col"
+            className="flex justify-center items-center md:pb-20 flex-col"
             id="hero"
           >
             <Hero />
@@ -30,13 +30,13 @@ const App = () => {
             <About />
           </section>
           <section
-            className="flex  justify-center items-center flex-col"
+            className="flex md:mt-[5.5rem] justify-center items-center flex-col"
             id="services"
           >
             <Services />
           </section>
           <section
-            className="flex   justify-center items-center flex-col"
+            className="flex  md:mt-[5.5rem] justify-center items-center flex-col"
             id="projects"
           >
             <Projects />

@@ -41,6 +41,20 @@ const Contact = () => {
         toggleActions: "play none none reverse",
       },
     });
+    gsap.from(formRef.current, {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: formRef.current,
+        start: "top 80%",
+        end: "bottom 80%",
+        scrub: 1,
+        toggleActions: "play none none reverse",
+      },
+    });
 
     // Floating effect for the image
     if (imageRef.current) {
@@ -49,7 +63,6 @@ const Contact = () => {
         repeat: -1,
         duration: 1,
         yoyo: true,
-        filter: "grayScale(0.5)",
         ease: "power1.inOut",
         
       });
@@ -79,7 +92,8 @@ const Contact = () => {
             </p>
             <span className="w-1/4 flex justify-end">
               <a
-                href="mailto:arifbasha559@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=arifbasha559@gmail.com"
+                target="_blank"
                 className="inline-flex gap-2 items-center p-3 text-sm rounded-lg size-fit bg-transparent text-[#F34629] hover:text-black border-[#F34629] border-2 hover:border-white ml-2 transition-all duration-500 ease-in-out hover:bg-[#F34629]"
               >
                 <IconContext.Provider value={{ className: "text-lg" }}>
@@ -104,7 +118,7 @@ const Contact = () => {
               placeholder="Message"
               rows={5}
             ></textarea>
-            <button className="bg-[#F34629] text-white px-5 py-2 rounded-lg hover:bg-white hover:text-[#F34629] hover:shadow-[0_0_15px_#F34629] transition-all duration-300 ease-in-out">
+            <button className="bg-[#F34629] selection:bg-black text-white px-5 py-2 rounded-lg hover:bg-white hover:text-[#F34629] hover:shadow-[0_0_15px_#F34629] transition-all duration-300 ease-in-out">
               Send
             </button>
           </form>
