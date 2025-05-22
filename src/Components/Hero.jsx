@@ -80,6 +80,7 @@ const Hero = () => {
                 "UX/UI Designer",
                 "Frontend Developer",
                 "Tech Enthusiast!",
+                "Penetration Tester!",
               ]}
               loop={false}
               cursorStyle="|"
