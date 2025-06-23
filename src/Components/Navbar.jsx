@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { IconContext } from "react-icons";
 import { IoMenu } from "react-icons/io5";
 import "../App.css";
-import gsap from "gsap";
 import { Helmet } from "react-helmet";
 
 const Navbar = () => {
@@ -53,27 +52,7 @@ const Navbar = () => {
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
-  useEffect(() => {
-    gsap.from(".logo", {
-      opacity: 0,
-      x: -50,
-      y: -50,
-      duration: 1,
-      delay:1,
-      ease: "power3.out",
-    });
-
-    gsap.from(".navBtn", {
-      x: 50,
-      y:-50,
-      opacity: 0,
-      stagger: 0.4,
-      filter: "blur(10px)",
-      duration: 0.8,
-      delay:1,
-      ease: "power3.out"
-    });
-  }, []);
+ 
   return (
     <div className="h-20 mb-2 bg-black px-2 lg:px-0 flex items-center justify-between sticky top-0 left-10 z-50 mx-auto">
       <Helmet>

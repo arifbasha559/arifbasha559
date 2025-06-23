@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedinIn, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { IoLocation, IoMail } from "react-icons/io5";
 import { SiRefinedgithub } from "react-icons/si";
 
@@ -24,15 +24,7 @@ const Footer = () => {
                 arifbasha559@gmail.com
               </a>
             </p>
-            <p className="text-lg text-white hover:text-black  flex items-center">
-              <FaPhoneAlt className="inline-block mr-2" />
-              <a
-                href="phone: +91 90872 40634"
-                className="hover:underline transition-all duration-300 ease-in-out"
-              >
-                +91 90872 40634
-              </a>
-            </p>
+            
           </div>
 
           {/* Social Media Links */}
@@ -63,14 +55,7 @@ const Footer = () => {
               >
                 <FaLinkedinIn className="  hover:text-blue-500 rounded-lg p-1 w-10 h-10" />
               </a>
-              <a
-                href="https://www.instagram.com/arif_off04/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-all  duration-300 ease-in-out"
-              >
-                <FaInstagram className="  hover:text-purple-800   rounded-lg p-1 w-10 h-10" />
-              </a>
+             
             </div>
           </div>
         </div>
