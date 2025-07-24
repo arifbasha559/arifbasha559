@@ -4,7 +4,7 @@ import { SiRefinedgithub } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F34629]  pt-10 pb-5">
+    <footer className="bg-[#E63A1F]  pt-10 pb-5">
       <div className="container mx-auto px-4">
         {/* Main Content */}
         <div className="flex flex-col  md:flex-row justify-between items-center gap-8">
@@ -62,7 +62,8 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <p className="text-center text-lg text-white ">
-          &copy; {new Date().getFullYear()} Arif Basha. All rights reserved.
+          &copy; {new Date().getFullYear()} Designed & Built by Arif Basha • © 2025
+
         </p>
       </div>
     </footer>

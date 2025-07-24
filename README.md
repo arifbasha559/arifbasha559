@@ -1,29 +1,33 @@
 # Hi, I'm Arif Basha 👋
 
-I'm a **self-taught software developer** passionate about building **clean, user-focused web experiences**. I enjoy solving real-world problems through code and continually exploring areas like **UI/UX**, **web development**, and **cybersecurity**.
+I'm a **self-taught software developer** passionate about building **clean, user-focused web experiences**. I thrive on solving real-world problems through code and constantly explore areas like **UI/UX** and **web development**.
 
-Currently expanding my knowledge and sharpening my skills through hands-on projects and learning platforms.
+Currently, I'm expanding my skills through hands-on projects, continuous learning, and deep dives into new technologies.
 
-## 📌 Projects
+---
 
-### 🌐 [Tech Zen](https://tech-zen.vercel.app/) – Modern Blogging Platform  
-> A full-featured blog app with authentication, rich text editing, and responsive design.  
-> Built using modern front-end tools and deployed on Vercel.
+## 🚀 Featured Projects
 
-### ✅ [Mak Todos](https://mak-todos.vercel.app/) – Minimalist Todo App  
-> A clean and efficient task manager supporting full CRUD and local persistence.  
-> Built with a focus on simplicity, performance, and user experience.
+### 🌐 [Tech Zen](https://tech-zen.vercel.app/) — Modern Blogging Platform  
+A full-featured blogging app with authentication, rich text editing, and responsive design.  
+**Tech Stack:** React, Tailwind CSS, Firebase, Vercel
 
-### 🖼️ [Exposio Gallery](https://exposio-gallery.vercel.app/) – Visual Portfolio Showcase  
-> A portfolio showcasing the beauty of light and shadow, capturing the essence of nature through a curated collection of photographs. 
-> Built with a focus on aesthetics, performance, and user experience. 
+### ✅ [Mak Todos](https://mak-todos.vercel.app/) — Minimalist Todo App  
+A sleek and efficient task manager with full CRUD functionality and local storage persistence.  
+**Focus:** Simplicity, performance, and seamless UX
 
+### 🖼️ [Exposio Gallery](https://exposio-gallery.vercel.app/) — Visual Portfolio Showcase  
+A curated gallery that captures the beauty of light, shadow, and nature.  
+**Built for:** Visual storytelling, performance, and elegant design
 
-## 🌱 Learning Journey
+---
 
-- Exploring cybersecurity concepts and web security practices  
-- Improving design thinking and UI/UX workflow  
+## 🌱 Currently Learning
+
+- Advanced UI/UX principles and design workflows  
 - Building and refining personal projects to apply real-world skills
+
+---
 
 ## 📫 Connect With Me
 
@@ -33,4 +37,5 @@ Currently expanding my knowledge and sharpening my skills through hands-on proje
 
 ---
 
-> “Keep building. Keep learning. Stay curious.” 🚀
+> _“Keep building. Keep learning. Stay curious.”_ 🚀
+

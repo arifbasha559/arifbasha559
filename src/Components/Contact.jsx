@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="w-full">
       <div className="flex w-full flex-col justify-center items-center relative">
         <h2
-          className="text-3xl mb-10 text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#F34629] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out before:content-[''] before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2 before:h-[2.5px] before:bg-[#F34629] before:absolute before:-bottom-2.5"
+          className="text-3xl mb-10 text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#E63A1F] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out before:content-[''] before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2 before:h-[2.5px] before:bg-[#E63A1F] before:absolute before:-bottom-2.5"
         >
           Contact Me
         </h2>
@@ -22,13 +22,13 @@ const Contact = () => {
             <p className="text-lg text-gray-400 w-3/4 ">
               If you have any questions or just want to say hi, don&apos;t fill out the
               form below. send me an email at{" "}
-              <span className="text-[#F34629]">arifbasha559@gmail.com</span>
+              <span className="text-[#E63A1F]">arifbasha559@gmail.com</span>
             </p>
             <span className="w-1/4 flex justify-end">
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=arifbasha559@gmail.com"
                 target="_blank"
-                className="inline-flex gap-2 items-center justify-center p-3 text-sm rounded-lg size-fit bg-transparent text-[#F34629] hover:text-black border-[#F34629] border-2 hover:border-white ml-2 transition-all duration-500 ease-in-out hover:bg-[#F34629]"
+                className="inline-flex gap-2 items-center justify-center p-3 text-sm rounded-lg size-fit bg-transparent text-[#E63A1F] hover:text-black border-[#E63A1F] border-2 hover:border-white ml-2 transition-all duration-500 ease-in-out hover:bg-[#E63A1F]"
               >
                 <IconContext.Provider value={{ className: "text-lg" }}>
                   <CiMail />
@@ -39,20 +39,20 @@ const Contact = () => {
           <form className="flex flex-col gap-5">
             <input
               type="text"
-              className="bg-transparent border-2 border-[#F34629] px-3 py-2 rounded-lg"
+              className="bg-transparent border-2 border-[#E63A1F] px-3 py-2 rounded-lg"
               placeholder="Name"
             />
             <input
               type="email"
-              className="bg-transparent border-2 border-[#F34629] px-3 py-2 rounded-lg"
+              className="bg-transparent border-2 border-[#E63A1F] px-3 py-2 rounded-lg"
               placeholder="Email"
             />
             <textarea
-              className="bg-transparent border-2 border-[#F34629] px-3 py-2 rounded-lg"
+              className="bg-transparent border-2 border-[#E63A1F] px-3 py-2 rounded-lg"
               placeholder="Message"
               rows={5}
             ></textarea>
-            <button className="bg-[#F34629] selection:bg-black text-white px-5 py-2 rounded-lg hover:bg-white hover:text-[#F34629] hover:shadow-[0_0_15px_#F34629] transition-all duration-300 ease-in-out">
+            <button className="bg-[#E63A1F] selection:bg-black text-white px-5 py-2 rounded-lg hover:bg-white hover:text-[#E63A1F] hover:shadow-[0_0_15px_#F34629] transition-all duration-300 ease-in-out">
               Send
             </button>
           </form>

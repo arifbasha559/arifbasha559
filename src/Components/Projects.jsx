@@ -3,7 +3,7 @@ const Projects = () => {
     {
       title: "Tech-Zen",
       message:
-        "is a modern, user-friendly blog platform designed for tech enthusiasts, developers, and curious minds.",
+        "A modern, user-friendly blog platform designed for tech enthusiasts, developers, and curious minds.",
       image: "./tech-zen.png",
       preview: "https://tech-zen.vercel.app/",
       code: "https://github.com/arifbasha559/tech-zen",
@@ -11,7 +11,7 @@ const Projects = () => {
     {
       title: "Mak Todos",
       message:
-        " is a minimalist and user-friendly todo application designed to help you organize your tasks efficiently.",
+        "A minimalist and user-friendly todo app to help you organize tasks efficiently.",
       image: "./Mak-todos.png",
       preview: "https://mak-todos.vercel.app/",
       code: "https://github.com/arifbasha559/mak-todos",
@@ -19,7 +19,7 @@ const Projects = () => {
     {
       title: "Exposio Gallery",
       message:
-        "A portfolio showcasing the beauty of light and shadow, capturing the essence of nature through our curated collection of photographs.",
+        "A gallery showcasing the beauty of light and shadow through curated photography.",
       image: "./exposio.png",
       preview: "https://exposio-gallery.vercel.app/",
       code: "https://github.com/arifbasha559/exposio",
@@ -27,51 +27,57 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-[90vh] my-auto   flex flex-col justify-center items-center"> 
-      <div className="Services-logo flex w-full h-20 flex-col justify-center items-center relative ">
-        <h2 className="text-3xl text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#F34629] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out  before:content-['']  before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2  before:h-[2.5px] before:bg-[#F34629] before:absolute before:-bottom-2.5">
+    <section id="projects" className="py-20 px-6  text-white">
+      {/* Section Heading */}
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold relative inline-block after:block after:w-full after:h-[2px] after:bg-[#E63A1F] after:absolute after:-bottom-1">
           My Projects
         </h2>
+        <p className="text-gray-400 mt-2">
+          Here are a few projects I've built recently.
+        </p>
       </div>
-      {/* Cards section */}
-      <div className="flex flex-col w-full mx-auto text-gray-300 justify-center items-center">
-        <div className="cards grid sm:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-10 h-full px-10 py-10">
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className="w-80 p-4 bg-black rounded-lg min-h-fit flex flex-col justify-between not-hover:shadow-white hover:shadow-[0_0_10px_#F34629] shadow-[0_0_2px] transform hover:scale-105 transition-transform duration-300 ease-in-out"
-            >
-            
-              <img
-                className="w-full h-40 object-cover rounded-t-lg"
-                alt="Card Image"
-                src={item.image}
-              />
-              <div className="p-4 flex flex-col justify-between">
-                <h2 className="text-xl   font-semibold">{item.title}</h2>
-                <p className="text-gray-600 ">{item.message}</p>
+
+      {/* Cards Grid */}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="bg-[#1A1A1A] rounded-xl overflow-hidden shadow-[0_0_10px_#F34629]/10 hover:shadow-[0_0_20px_#F34629] transition-transform hover:scale-[1.03]"
+          >
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-5 flex flex-col h-fit justify-between">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-400 mb-4">{item.message}</p>
               </div>
-              <div className="flex gap-2 items-center mt-auto px-3"> 
+              <div className="flex gap-3 ">
                 <a
                   href={item.preview}
                   target="_blank"
-                  className="bg-blue-500 text-sm  hover:bg-blue-600  text-white px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-sm rounded-full border border-[#E63A1F] bg-[#E63A1F] hover:text-[#E63A1F] hover:bg-[#E63A1F11] text-white transition"
                 >
                   Live Preview
                 </a>
-                 <a
+                <a
                   href={item.code}
                   target="_blank"
-                  className="bg-green-500 text-sm hover:bg-green-600  text-white px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-green-400"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-sm rounded-full border border-[#E63A1F] text-[#E63A1F] hover:bg-[#E63A1F] hover:text-white transition"
                 >
-                  code
+                  Code
                 </a>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

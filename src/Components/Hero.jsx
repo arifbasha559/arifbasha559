@@ -31,11 +31,11 @@ const Hero = () => {
           
         <h1 className="text-2xl">
           Hi, It&apos;s{" "}
-          <span className="text-[#F34629] font-semibold">Arif Basha</span>
+          <span className="text-[#E63A1F] font-semibold">Arif Basha</span>
         </h1>
         <h2 className="text-3xl font-medium">
           I&apos;m a{" "}
-          <span className="border-[#F34629] border-r-4 pr-1 text-[#F34629] blinking-border text-wrap">
+          <span className="border-[#E63A1F] border-r-4 pr-1 text-[#E63A1F] blinking-border text-wrap">
             <Typewriter
               words={[
                 "Student",
@@ -83,7 +83,7 @@ const Hero = () => {
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn hover:bg-[#F34629] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#F34629] border-[#F34629] border p-2.5 rounded-full "
+              className="btn hover:bg-[#E63A1F] hover:text-black hover:shadow-[0_0_25px_#F34629] text-[#E63A1F] border-[#E63A1F] border p-2.5 rounded-full "
             >
               <IconContext.Provider value={{ className: "text-3xl" }}>
                 {icon}

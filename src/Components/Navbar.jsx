@@ -62,7 +62,7 @@ const Navbar = () => {
         <a
           to="/"
           title="Arif Basha"
-          className="text-2xl font-poppins text-[#F34629] cursor-default tracking-wider text-nowrap md:mr-16 mr-0"
+          className="text-2xl font-poppins text-[#E63A1F] cursor-default tracking-wider text-nowrap md:mr-16 mr-0"
         >
           Arif Basha
         </a>
@@ -74,8 +74,8 @@ const Navbar = () => {
           onClick={closeMenu}
           href="#hero"
           className={`w-fit lg:ml-10 ml-0 ${
-            activeSection === "hero" ? "activate text-[#F34629]" : ""
-          } hover:text-[#F34629] after:bg-[#F34629] nav-link navBtn px-2 py-0.5 text-center`}
+            activeSection === "hero" ? "activate text-[#E63A1F]" : ""
+          } hover:text-[#E63A1F] after:bg-[#E63A1F] nav-link navBtn px-2 py-0.5 text-center`}
           title="Home"
         >
           Home
@@ -84,8 +84,8 @@ const Navbar = () => {
           onClick={closeMenu}
           href="#about"
           className={`w-fit ${
-            activeSection === "about" ? "activate text-[#F34629]" : ""
-          } nav-link navBtn hover:text-[#F34629] after:bg-[#F34629] px-2 py-0.5 rounded-lg text-center`}
+            activeSection === "about" ? "activate text-[#E63A1F]" : ""
+          } nav-link navBtn hover:text-[#E63A1F] after:bg-[#E63A1F] px-2 py-0.5 rounded-lg text-center`}
           title="About"
         >
           About
@@ -94,8 +94,8 @@ const Navbar = () => {
           onClick={closeMenu}
           href="#services"
           className={`w-fit ${
-            activeSection === "services" ? "activate text-[#F34629]" : ""
-          } nav-link navBtn hover:text-[#F34629] after:bg-[#F34629] px-2 py-0.5 rounded-lg text-center`}
+            activeSection === "services" ? "activate text-[#E63A1F]" : ""
+          } nav-link navBtn hover:text-[#E63A1F] after:bg-[#E63A1F] px-2 py-0.5 rounded-lg text-center`}
           title="Services"
         >
           Services
@@ -104,8 +104,8 @@ const Navbar = () => {
           onClick={closeMenu}
           href="#projects"
           className={`w-fit ${
-            activeSection === "projects" ? "activate text-[#F34629]" : ""
-          } nav-link navBtn hover:text-[#F34629] after:bg-[#F34629] px-2 py-0.5 rounded-lg text-center`}
+            activeSection === "projects" ? "activate text-[#E63A1F]" : ""
+          } nav-link navBtn hover:text-[#E63A1F] after:bg-[#E63A1F] px-2 py-0.5 rounded-lg text-center`}
           title="Projects"
         >
           Projects
@@ -114,8 +114,8 @@ const Navbar = () => {
           onClick={closeMenu}
           href="#contact"
           className={`w-fit ${
-            activeSection === "contact" ? "activate text-[#F34629]" : ""
-          } nav-link navBtn hover:text-[#F34629] after:bg-[#F34629] px-2 py-0.5 rounded-lg text-center`}
+            activeSection === "contact" ? "activate text-[#E63A1F]" : ""
+          } nav-link navBtn hover:text-[#E63A1F] after:bg-[#E63A1F] px-2 py-0.5 rounded-lg text-center`}
           title="Contact"
         >
           Contact
@@ -124,14 +124,14 @@ const Navbar = () => {
 
       {/* Mobile Navigation Links */}
       <div
-        className={`mNavBtn flex lg:hidden gap-2 lg:static absolute ${nav} text-sm font-medium gap-10 -z-10 pt-20 pb-10 lg:py-0 h-fit lg:translate-0 flex-col justify-end items-center w-full bg-[#000000bd] lg:flex-row top-14 left-0 bg-blaack z-index-[1] transition-all duration-500 ease-in-out border-b-2 border-[#F34629]`}
+        className={`mNavBtn flex lg:hidden gap-2 lg:static absolute ${nav} text-sm font-medium gap-10 -z-10 pt-20 pb-10 lg:py-0 h-fit lg:translate-0 flex-col justify-end items-center w-full bg-[#000000bd] lg:flex-row top-14 left-0 bg-blaack z-index-[1] transition-all duration-500 ease-in-out border-b-2 border-[#E63A1F]`}
       >
         <a
           onClick={closeMenu}
           href="#hero"
           className={`w-fit lg:ml-10 ml-0 ${
-            activeSection === "hero" ? "activate text-[#F34629]" : ""
-          } hover:text-[#F34629] after:bg-[#F34629] nav-link px-2 py-0.5 text-center`}
+            activeSection === "hero" ? "activate text-[#E63A1F]" : ""
+          } hover:text-[#E63A1F] after:bg-[#E63A1F] nav-link px-2 py-0.5 text-center`}
           title="Home"
         >
           Home
@@ -140,8 +140,8 @@ const Navbar = () => {
           onClick={closeMenu}
           href="#about"
           className={`w-fit ${
-            activeSection === "about" ? "activate text-[#F34629]" : ""
-          } nav-link hover:text-[#F34629] after:bg-[#F34629] px-2 py-0.5 rounded-lg text-center`}
+            activeSection === "about" ? "activate text-[#E63A1F]" : ""
+          } nav-link hover:text-[#E63A1F] after:bg-[#E63A1F] px-2 py-0.5 rounded-lg text-center`}
           title="About"
         >
           About
@@ -150,8 +150,8 @@ const Navbar = () => {
           onClick={closeMenu}
           href="#services"
           className={`w-fit ${
-            activeSection === "services" ? "activate text-[#F34629]" : ""
-          } nav-link hover:text-[#F34629] after:bg-[#F34629] px-2 py-0.5 rounded-lg text-center`}
+            activeSection === "services" ? "activate text-[#E63A1F]" : ""
+          } nav-link hover:text-[#E63A1F] after:bg-[#E63A1F] px-2 py-0.5 rounded-lg text-center`}
           title="Services"
         >
           Services
@@ -160,8 +160,8 @@ const Navbar = () => {
           onClick={closeMenu}
           href="#projects"
           className={`w-fit ${
-            activeSection === "projects" ? "activate text-[#F34629]" : ""
-          } nav-link hover:text-[#F34629] after:bg-[#F34629] px-2 py-0.5 rounded-lg text-center`}
+            activeSection === "projects" ? "activate text-[#E63A1F]" : ""
+          } nav-link hover:text-[#E63A1F] after:bg-[#E63A1F] px-2 py-0.5 rounded-lg text-center`}
           title="Projects"
         >
           Projects
@@ -170,8 +170,8 @@ const Navbar = () => {
           onClick={closeMenu}
           href="#contact"
           className={`w-fit ${
-            activeSection === "contact" ? "activate text-[#F34629]" : ""
-          } nav-link hover:text-[#F34629] after:bg-[#F34629] px-2 py-0.5 rounded-lg text-center`}
+            activeSection === "contact" ? "activate text-[#E63A1F]" : ""
+          } nav-link hover:text-[#E63A1F] after:bg-[#E63A1F] px-2 py-0.5 rounded-lg text-center`}
           title="Contact"
         >
           Contact
