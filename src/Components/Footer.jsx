@@ -4,7 +4,7 @@ import { SiRefinedgithub } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#E63A1F]  pt-10 pb-5">
+    <footer className="bg-[#E63A1F]  pt-10 pb-5" data-aos="fade-up">
       <div className="container mx-auto px-4">
         {/* Main Content */}
         <div className="flex flex-col  md:flex-row justify-between items-center gap-8">

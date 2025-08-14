@@ -7,12 +7,9 @@ const CustomCursor = () => {
   useEffect(() => {
     const moveCursor = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
-      
       // Check if element is clickable
       const target = e.target;
-      console.log(window.getComputedStyle(target).getPropertyValue('cursor'));
       setIsPointer(
-        
         !(window.getComputedStyle(target).getPropertyValue('cursor') === 'default'  ||
           window.getComputedStyle(target).getPropertyValue('cursor') === 'auto' )
       );
@@ -27,26 +24,31 @@ const CustomCursor = () => {
 
   return (
     <>
-      {/* Outer circle (animated trail) */}
+      {/* Outer ring */}
       <div
-        className={`fixed rounded-full pointer-events-none transform transition-colors duration-500 ease-in -translate-x-1/2 -translate-y-1/2 z-[1000] 
-          ${isPointer ? 'bg-transparent border-2 border-white  scale-150' : 'bg-[rgba(230,58,31,0.52)]'} 
-          transition-all duration-100 ease-out`}
+        className={`fixed pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[1000] rounded-full transition-all duration-100 ease-linear ${
+          isPointer
+            ? 'border-2 border-[#F34629]  shadow-[0_0_20px_4px_#F34629cc] scale-125 opacity-100'
+            : 'border border-[#444] bg-[#232323]  opacity-95'
+        }`}
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
-          width: isPointer ? '30px' : '40px',
-          height: isPointer ? '30px' : '40px',
+          width: isPointer ? '36px' : '44px',
+          height: isPointer ? '36px' : '44px',
+          backdropFilter: 'blur(2.5px)',
         }}
       />
-      
       {/* Inner dot */}
       <div
-        className="fixed rounded-full bg-[#f79c8b] w-2 h-2 pointer-events-none transform -translate-x-1/2 -translate-y-1/2 z-50 transition-transform duration-75"
+        className="fixed rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[1001] transition-all duration-75 "
         style={{
-          left: `${position.x+5}px`,
-          top: `${position.y+5}px`,
-          transform: isPointer ? 'translate(-50%, -50%) scale(1.5)' : 'translate(-50%, -50%)',
+          left: `${position.x}px`,
+          top: `${position.y}px`,
+          width: isPointer ? '12px' : '10px',
+          height: isPointer ? '12px' : '10px',
+          background: isPointer ? '#F34629' : '#fff',
+          boxShadow: isPointer ? '0 0 12px 3px #F34629cc' : '0 0 8px 2px #fff',
         }}
       />
     </>

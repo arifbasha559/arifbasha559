@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className=" md:mt-[5.5rem] min-h-[95vh] flex flex-col justify-center items-center">
+  <div className=" md:mt-[5.5rem] min-h-[95vh] flex flex-col justify-center items-center" data-aos="fade-up">
       <div className="flex w-full flex-col justify-center items-center relative">
         <h2 className="text-3xl text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#E63A1F] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out before:content-[''] before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2 before:h-[2.5px] before:bg-[#E63A1F] before:absolute before:-bottom-2.5">
           About Me
@@ -12,9 +12,10 @@ const About = () => {
           <div className="w-full lg:w-1/2">
             <div className="flex w-full h-full p-10 lg:p-20 select-none justify-center">
               <img
-                src=".\hero-section.jpg"
+                src=".\\hero-section.jpg"
                 className="rounded-lg hover:shadow-[0_0_25px_#F34629] hover:scale-[102%] shadow-[0_0_20px_#F34629] border border-[#E63A1F] aspect-square object-cover object-top w-1/2 lg:w-auto"
-                alt=""
+                alt="Arif Basha about section photo"
+                loading="lazy"
               />
             </div>
           </div>

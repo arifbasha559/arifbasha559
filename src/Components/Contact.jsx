@@ -6,7 +6,7 @@ const Contact = () => {
 
   return (
     <div className="w-full">
-      <div className="flex w-full flex-col justify-center items-center relative">
+      <div className="flex w-full flex-col justify-center items-center relative"  data-aos="fade-up" >
         <h2
           className="text-3xl mb-10 text-white relative inline-block cursor-default after:content-[''] after:block after:w-full after:h-[2.5px] after:bg-[#E63A1F] after:absolute after:-bottom-1 hover:text-4xl transition-all duration-500 ease-in-out before:content-[''] before:w-[80%] before:block before:left-1/2 before:-translate-x-1/2 before:h-[2.5px] before:bg-[#E63A1F] before:absolute before:-bottom-2.5"
         >
@@ -60,8 +60,9 @@ const Contact = () => {
         <div className="w-full hidden lg:flex lg:w-1/2 h-1/2 justify-center">
           <img
             className="w-1/2 h-full object-cover rounded-full shadow-[0_0_20px_#F34629]"
-            src=".\hero-section.jpg"
-            alt="me"
+            src=".\\hero-section.jpg"
+            alt="Arif Basha profile photo"
+            loading="lazy"
           />
         </div>
       </div>

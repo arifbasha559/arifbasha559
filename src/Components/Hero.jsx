@@ -16,9 +16,10 @@ const Hero = () => {
       <div className="left h-1/3 w-full lg:w-1/2 md:h-full my-auto ">
         <div className="flex w-full px-20 h-3/4 select-none justify-center ">
           <img
-            src=".\hero-section.jpg"
+            src=".\\hero-section.jpg"
             className="rounded-full md:max-w-2/4  lg:max-w-2/3 shadow-[0_0_25px_#F34629]"
-            alt=""
+            alt="Arif Basha profile photo"
+            loading="lazy"
           />
         </div>
       </div>

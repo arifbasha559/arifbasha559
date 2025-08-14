@@ -67,6 +67,7 @@ body{
   background-color: black;
   scrollbar-width: thin;
   scrollbar-color: #666666 #121212;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
