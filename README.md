@@ -21,7 +21,7 @@ A curated gallery that captures the beauty of light, shadow, and nature.
 A real-time cybersecurity monitoring dashboard inspired by the J.A.R.V.I.S interface from Iron Man.
 **Tech Stack:** React, Tailwind CSS, Chart.js, Vercel
 
-### 🌉 [Word Bridge](https://wordbridge.vercel.app/) — Translation App
+### 🌉 [Word Bridge](https://wordbridge-three.vercel.app/) — Translation App
 A translation app that bridges language gaps, making communication seamless and accessible.
 **Tech Stack:** React, Tailwind CSS, Vercel
 
