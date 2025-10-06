@@ -1,11 +1,6 @@
 import { ExternalLink, Github } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import makTodos from '../Assets/Mak-Todos.png';
-import wordbridge from '../Assets/wordbridge.png';
-import dashboard from '../Assets/dashboard.png';
-import exposio from '../Assets/exposio.png';
-import techZen from '../Assets/tech-zen.png';
-import rsg from '../Assets/rsg.png';
+
 
 
 const projects = [
@@ -13,7 +8,7 @@ const projects = [
       title: "Tech-Zen",
       description:
         "A modern, user-friendly blog platform designed for tech enthusiasts, developers, and curious minds.",
-      image: techZen,
+      image: './tech-zen.png',
       tech: ['ReactJS', 'NodeJS', 'MongoDB', 'ExpressJS'],
       live: "https://tech-zen.vercel.app/",
       github: "https://github.com/arifbasha559/tech-zen",
@@ -25,7 +20,7 @@ const projects = [
         "A gallery showcasing the beauty of light and shadow through curated photography.",
       tech: ['ReactJS','TailwindCSS', 'Pixabay', 'Vercel'],
 
-      image: exposio,
+      image: './exposio.png',
       live: "https://exposio-gallery.vercel.app/",
       github: "https://github.com/arifbasha559/exposio",
     },
@@ -34,7 +29,7 @@ const projects = [
       description:
         " A futuristic, real-time cybersecurity monitoring dashboard inspired by the J.A.R.V.I.S interface from Iron Man. ",
       tech: ['ReactJS','TailwindCSS', 'Vercel'],
-      image: dashboard,
+      image: './dashboard.png',
       live: "https://jarvis-cyber-dashboard.vercel.app/",
       github: "https://github.com/arifbasha559/jarvis-cyber-dashboard",
     },
@@ -42,7 +37,7 @@ const projects = [
       title: "Word Bridge",
       description:
         " A Translation app that bridges language gaps, making communication seamless and accessible.",
-      image: wordbridge,
+      image: './wordbridge.png',
       tech: ['ReactJS','TailwindCSS', 'Vercel', 'DeepTranslate API'],
       live: "https://wordbridge-three.vercel.app/",
       github: "https://github.com/arifbasha559/wordbridge",
@@ -51,7 +46,7 @@ const projects = [
       title: "Random String Generator",
       description:
         "A simple and secure String generator that generates strong and random passwords for your online accounts.",
-      image: rsg,
+      image: './rsg.png',
       tech: ['ReactJS','TailwindCSS', 'Vercel'],
       live: "https://rand-str-gen.vercel.app/",
       github: "https://github.com/arifbasha559/Rand-str-Gen",
@@ -60,7 +55,7 @@ const projects = [
       title: "Mak Todos",
       description:
         "A minimalist and user-friendly todo app to help you organize tasks efficiently.",
-      image: makTodos,
+      image: './Mak-todos.png',
       tech: ['ReactJS','TailwindCSS', 'Vercel'],
       live: "https://mak-todos.vercel.app/",
       github: "https://github.com/arifbasha559/mak-todos",
