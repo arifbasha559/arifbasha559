@@ -1,8 +1,11 @@
-import { ArrowRight, Download } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { ArrowRight, Download } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
-  const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; size: number }>>([]);
+  const [particles, setParticles] = useState<
+    Array<{ id: number; x: number; y: number; size: number }>
+  >([]);
 
   useEffect(() => {
     const newParticles = Array.from({ length: 50 }, (_, i) => ({
@@ -15,7 +18,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen cursor-default flex items-center justify-center overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-black to-violet-900/20" />
 
       <div className="absolute inset-0 overflow-hidden">
@@ -49,7 +55,22 @@ export default function Hero() {
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fadeInUp">
           <span className="bg-gradient-to-r from-white via-blue-200 to-violet-200 bg-clip-text text-transparent">
-            Creative Developer
+            <Typewriter
+              words={[
+                "Student",
+                "UX/UI Designer",
+                "Frontend Developer",
+                "Tech Enthusiast!",
+                "Creative Developer",
+              ]}
+              loop
+              cursor
+              cursorStyle="|"
+              cursorColor="#00ffff"
+              typeSpeed={100}
+              deleteSpeed={75}
+              delaySpeed={1400}
+            />
           </span>
         </h1>
 
@@ -58,21 +79,32 @@ export default function Hero() {
         </h2>
 
         <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto animate-fadeInUp animation-delay-400">
-          Full-stack developer specializing in building exceptional digital experiences.
-          Transforming ideas into elegant, user-centric solutions.
+          Full-stack developer specializing in building exceptional digital
+          experiences. Transforming ideas into elegant, user-centric solutions.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp animation-delay-600">
           <button
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() =>
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-violet-500 rounded-full font-semibold text-white shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:shadow-[0_0_50px_rgba(59,130,246,0.8)] transition-all duration-300 flex items-center justify-center gap-2"
           >
             Hire Me
-            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            <ArrowRight
+              size={20}
+              className="group-hover:translate-x-1 transition-transform"
+            />
           </button>
 
           <button
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() =>
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full font-semibold text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex items-center justify-center gap-2"
           >
             View Work
@@ -89,3 +121,4 @@ export default function Hero() {
     </section>
   );
 }
+

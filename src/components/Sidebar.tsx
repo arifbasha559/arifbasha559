@@ -3,8 +3,6 @@ import {
   User,
   Briefcase,
   Code,
-  Award,
-  MessageSquare,
   Mail,
 } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -14,8 +12,6 @@ const navItems = [
   { id: "about", label: "About", icon: User },
   { id: "projects", label: "Projects", icon: Briefcase },
   { id: "skills", label: "Skills", icon: Code },
-  { id: "experience", label: "Experience", icon: Award },
-  { id: "testimonials", label: "Testimonials", icon: MessageSquare },
   { id: "contact", label: "Contact", icon: Mail },
 ];
 
@@ -48,7 +44,7 @@ export default function Sidebar() {
   };
 
   return (
-    <nav className="fixed left-0 top-1/2 -translate-y-1/2 z-50 hidden lg:block">
+    <nav className="fixed left-0 top-1/2 -translate-y-1/2 z-40 hidden lg:block">
       <div className="bg-black/50   backdrop-blur-lg border-r border-blue-500/20 rounded-r-2xl p-4">
         <ul className={`space-y-6`}>
           {navItems.map((item) => {
@@ -57,6 +53,7 @@ export default function Sidebar() {
 
             return (
               <li key={item.id} >
+                
                 <button
                   onClick={() => scrollToSection(item.id)}
                   className={`group flex items-center w-full justify-between gap-3 transition-all duration-300 ${
@@ -81,7 +78,7 @@ export default function Sidebar() {
                         : "bg-white/5 group-hover:bg-white/10"
                     }`}
                   >
-                    <Icon size={20} />
+                    <Icon  size={20} />
                     {isActive && (
                       <div className="absolute inset-0 rounded-lg bg-blue-500/30 animate-pulse" />
                     )}

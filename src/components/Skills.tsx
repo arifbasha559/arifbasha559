@@ -1,15 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
-import { Code2, Database, Palette, Server, Smartphone, Cloud, Lightbulb, Users, Target, Zap } from 'lucide-react';
+import { Code2, Database, Palette, Server, Smartphone, Lightbulb, Users, Target, Zap } from 'lucide-react';
 
 const technicalSkills = [
-  { name: 'React / Next.js', level: 95, icon: Code2 },
-  { name: 'TypeScript', level: 90, icon: Code2 },
-  { name: 'Node.js / Express', level: 88, icon: Server },
-  { name: 'PostgreSQL / MongoDB', level: 85, icon: Database },
-  { name: 'Tailwind CSS', level: 92, icon: Palette },
-  { name: 'React Native', level: 80, icon: Smartphone },
-  { name: 'AWS / Cloud Services', level: 75, icon: Cloud },
-  { name: 'Python / Django', level: 78, icon: Code2 },
+  { name: 'React / Next.js', level: 75, icon: Code2 },
+  { name: 'JavaScript ', level: 90, icon: Code2 },
+  { name: 'Node.js / Express', level: 50, icon: Server },
+  { name: 'MongoDB', level: 70, icon: Database },
+  { name: 'Tailwind / NativeWind', level: 95, icon: Palette },
+  { name: 'React Native', level: 50, icon: Smartphone },
+  { name: 'Python', level: 78, icon: Code2 },
 ];
 
 const softSkills = [
@@ -89,10 +88,10 @@ export default function Skills() {
 
                     <div className="relative h-3 bg-gray-800/50 rounded-full overflow-hidden border border-blue-500/20">
                       <div
-                        className="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-500 to-violet-500 rounded-full transition-all duration-1000 ease-out"
+                        className="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-500 to-violet-500 overflow-hidden rounded-full transition-all duration-1000 ease-out"
                         style={{ width: `${animatedLevels[index]}%` }}
                       >
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/20 animate-shimmer" />
+                        <div  className="absolute inset-0 bg-gradient-to-r from-transparent to-white/20 animate-shimmer" />
                       </div>
                       <div className="absolute inset-0 bg-blue-500/20 group-hover:bg-blue-500/30 transition-colors rounded-full" />
                     </div>
@@ -137,7 +136,7 @@ export default function Skills() {
             <div className="mt-8 bg-gradient-to-br from-blue-900/10 to-violet-900/10 rounded-xl p-6 border border-blue-500/20">
               <h4 className="text-white font-semibold mb-4">Additional Expertise</h4>
               <div className="flex flex-wrap gap-2">
-                {['Git', 'Docker', 'GraphQL', 'REST APIs', 'Agile', 'CI/CD', 'Testing', 'Security'].map((item, index) => (
+                {['Git', 'REST APIs', 'Testing', 'Figma', 'Debugging', 'GitHub'].map((item, index) => (
                   <span
                     key={index}
                     className="px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 text-sm font-medium hover:bg-blue-500/20 transition-colors"

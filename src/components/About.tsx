@@ -4,29 +4,30 @@ import { useEffect, useRef, useState } from "react";
 const services = [
   {
     icon: Code2,
-    title: "Web Development",
+    title: "Web App Development",
     description:
-      "Building responsive and performant web applications using modern technologies and best practices.",
+      "I build sleek, scalable, and high-performance web applications that bring ideas to life using React, Next.js, and modern web technologies.",
   },
   {
     icon: Palette,
     title: "UI/UX Design",
     description:
-      "Creating intuitive and beautiful user interfaces that provide exceptional user experiences.",
+      "From wireframes to polished interfaces, I design engaging digital experiences that connect with users and enhance usability.",
   },
   {
     icon: Rocket,
-    title: "Product Strategy",
+    title: "Creative Development",
     description:
-      "Helping businesses transform ideas into successful digital products with strategic planning.",
+      "Combining design and code to deliver interactive, visually striking, and purposeful digital products that stand out on the web.",
   },
   {
     icon: Users,
-    title: "Consulting",
+    title: "Technical Guidance",
     description:
-      "Providing expert guidance on technical architecture, team building, and development processes.",
+      "Supporting teams and individuals with code reviews, performance optimization, and smart tech decisions to build better products.",
   },
 ];
+
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -78,13 +79,13 @@ export default function About() {
             }`}
           >
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-700 to-violet-700 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
-                <div className="relative bg-gradient-to-br from-blue-900/20 to-violet-900/20 rounded-2xl p-8 border border-blue-500/20">
-                  <div className="aspect-square text-5xl font-bold text-wrap rounded-xl flex items-center justify-center">
-                   AB
-                  </div>
+              <div className="absolute -inset-14 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
+              <div className="max-w-md relative m-auto bg-gradient-to-br from-blue-900/20 to-violet-900/20 rounded-2xl p-8 border border-blue-500/20">
+                <div className="aspect-square  text-5xl font-bold text-wrap rounded-xl flex items-center justify-center">
+                  AB
                 </div>
-             </div>
+              </div>
+            </div>
           </div>
 
           <div
@@ -141,7 +142,7 @@ export default function About() {
             What I Do
           </h3>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 flex-wrap lg:grid-cols-4 gap-6">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (

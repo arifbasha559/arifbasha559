@@ -1,4 +1,4 @@
-import { Home, User, Briefcase, Code, Award, MessageSquare, Mail, Menu, X } from 'lucide-react';
+import { Home, User, Briefcase, Code,  Mail, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const navItems = [
@@ -6,8 +6,7 @@ const navItems = [
   { id: 'about', label: 'About', icon: User },
   { id: 'projects', label: 'Projects', icon: Briefcase },
   { id: 'skills', label: 'Skills', icon: Code },
-  { id: 'experience', label: 'Experience', icon: Award },
-  { id: 'testimonials', label: 'Testimonials', icon: MessageSquare },
+ 
   { id: 'contact', label: 'Contact', icon: Mail },
 ];
 
