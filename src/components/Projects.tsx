@@ -116,7 +116,7 @@ export default function Projects() {
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.github}
-                    className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-blue-500/50 transition-colors"
+                    className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-green-500/50 transition-colors"
                     onClick={(e) => e.preventDefault()}
                   >
                     <Github size={20} className="text-white" />
