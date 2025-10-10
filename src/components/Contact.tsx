@@ -54,7 +54,7 @@ export default function Contact() {
 
       alert("Thank you for your message! I will get back to you soon.");
       setFormData({ from_name: "", from_email: "", subject: "", message: "" });
-    } catch (error: unknown) {
+    } catch (error) {
       console.error(error.text || error);
       alert("Oops! Something went wrong. Please try again.");
     } finally {

@@ -18,10 +18,20 @@ const projects = [
         description:
             "A gallery showcasing the beauty of light and shadow through curated photography.",
         image: "./exposio.png",
-        tech: ["ReactJS", "TailwindCSS", "Pixabay", "Vercel"],
+        tech: ["ReactJS", "TailwindCSS", "Pixabay API", "Vercel"],
         category: "Web",
         live: "https://exposio-gallery.vercel.app/",
         github: "https://github.com/arifbasha559/exposio",
+    },
+    {
+        title: "JARVIS Voice Assistant",
+        description:
+            "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
+        image: "./jarvis-assistant.png",
+        tech: ["ReactJS", "TailwindCSS", "Vercel"],
+        category: "Web",
+        live: "https://tony-jarvis.vercel.app/",
+        github: "https://github.com/arifbasha559/Jarvis",
     },
     {
         title: "JARVIS Cyber Dashboard",
@@ -57,10 +67,10 @@ const projects = [
         title: "My Leads (Extension)",
         description:
             "A simple and smart Chrome extension to capture and manage links directly from your browser.",
-        image: "./My-leads.png",
+        image: "./my-leads.png",
         tech: ["ReactJS", "TailwindCSS", "Vercel", "Manifest V3"],
         category: "Other",
-        live: "https://github.com/arifbasha559/MyLeads",
+        live: "https://my-leads-website.vercel.app/",
         github: "https://github.com/arifbasha559/MyLeads",
     },
     {
@@ -72,6 +82,26 @@ const projects = [
         category: "Web",
         live: "https://rand-str-gen.vercel.app/",
         github: "https://github.com/arifbasha559/Rand-str-Gen",
+    },
+    {
+        title: "Todays News",
+        description:
+            "A news aggregator app that provides the latest headlines from various sources.",
+        image: "./todays-News.png",
+        tech: ["HTML", "TailwindCSS", "News API", "Vercel"],
+        category: "Web",
+        live: "https://todaysnews-zeta.vercel.app/",
+        github: "https://github.com/arifbasha559/todaysnews",
+    },
+    {
+        title: "PI Converter",
+        description:
+            "A tool for converting different file formats to another.",
+        image: "./pi-converter.png",
+        tech: ["HTML", "CSS", "Javascript",  "Vercel"],
+        category: "Web",
+        live: "https://pi-converter.vercel.app/",
+        github: "https://github.com/arifbasha559/pi-converter",
     },
 ];
 
