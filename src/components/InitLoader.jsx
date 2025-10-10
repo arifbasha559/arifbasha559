@@ -19,6 +19,7 @@ export default function InitLoader({ onFinish }) {
                 }`}
         >
             <div className="flex items-center justify-center h-screen w-screen ">
+               
                 <div className="w-32 h-32 relative flex items-center justify-center">
                     <div
                         className="absolute inset-0 rounded-xl bg-blue-500/20 blur-xl animate-pulse"

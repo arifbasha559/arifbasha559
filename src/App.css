@@ -1,0 +1,14 @@
+/* Add to your global CSS file */
+@keyframes bounce-horizontal {
+  0%, 100% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+}
+
+.plink:hover .animate-bounce-horizontal {
+  animation: bounce-horizontal 1.5s linear infinite;
+}
+
