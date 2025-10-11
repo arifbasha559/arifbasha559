@@ -14,6 +14,26 @@ const projects = [
         github: "https://github.com/arifbasha559/tech-zen",
     },
     {
+        title: "MovieX App",
+        description:
+            "A movie discovery app that helps users find and explore films based on their preferences.",
+        image: "./movieX.png",
+        tech: ["ReactNative", "Nativewind", "TMDB API", "Expo"],
+        category: "Android",
+        live: "https://movie-x-red.vercel.app",
+        github: "https://github.com/arifbasha559/moviex",
+    },
+    {
+        title: "JARVIS Voice Assistant",
+        description:
+        "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
+        image: "./jarvis-assistant.png",
+        tech: ["ReactJS", "TailwindCSS", "Vercel"],
+        category: "Web",
+        live: "https://tony-jarvis.vercel.app/",
+        github: "https://github.com/arifbasha559/Jarvis",
+    },
+    {
         title: "Exposio Gallery",
         description:
             "A gallery showcasing the beauty of light and shadow through curated photography.",
@@ -22,16 +42,6 @@ const projects = [
         category: "Web",
         live: "https://exposio-gallery.vercel.app/",
         github: "https://github.com/arifbasha559/exposio",
-    },
-    {
-        title: "JARVIS Voice Assistant",
-        description:
-            "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
-        image: "./jarvis-assistant.png",
-        tech: ["ReactJS", "TailwindCSS", "Vercel"],
-        category: "Web",
-        live: "https://tony-jarvis.vercel.app/",
-        github: "https://github.com/arifbasha559/Jarvis",
     },
     {
         title: "JARVIS Cyber Dashboard",

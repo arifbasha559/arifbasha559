@@ -9,35 +9,33 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
 
 const projects = [
-  {
-    title: "Tech-Zen",
-    description:
-      "A modern, user-friendly blog platform designed for tech enthusiasts, developers, and curious minds.",
-    image: "./tech-zen.png",
-    tech: ["ReactJS", "NodeJS", "MongoDB", "ExpressJS"],
-    live: "https://tech-zen.vercel.app/",
-    github: "https://github.com/arifbasha559/tech-zen",
-  },
-
-  {
-    title: "Exposio Gallery",
-    description:
-      "A gallery showcasing the beauty of light and shadow through curated photography.",
-    tech: ["ReactJS", "TailwindCSS", "Pixabay", "Vercel"],
-
-    image: "./exposio.png",
-    live: "https://exposio-gallery.vercel.app/",
-    github: "https://github.com/arifbasha559/exposio",
-  },
-  {
-    title: "JARVIS Cyber Dashboard",
-    description:
-      " A futuristic, real-time cybersecurity monitoring dashboard inspired by the J.A.R.V.I.S interface from Iron Man. ",
-    tech: ["ReactJS", "TailwindCSS", "Vercel"],
-    image: "./dashboard.png",
-    live: "https://jarvis-cyber-dashboard.vercel.app/",
-    github: "https://github.com/arifbasha559/jarvis-cyber-dashboard",
-  },
+   {
+        title: "MovieX App",
+        description:
+            "A movie discovery app that helps users find and explore films based on their preferences.",
+        image: "./movieX.png",
+        tech: ["ReactNative", "Nativewind", "TMDB API", "Expo"],
+        live: "https://movie-x-red.vercel.app/",
+        github: "https://github.com/arifbasha559/moviex",
+    },
+    {
+        title: "JARVIS Voice Assistant",
+        description:
+        "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
+        image: "./jarvis-assistant.png",
+        tech: ["ReactJS", "TailwindCSS", "Vercel"],
+        live: "https://tony-jarvis.vercel.app/",
+        github: "https://github.com/arifbasha559/Jarvis",
+    },
+    {
+        title: "Exposio Gallery",
+        description:
+            "A gallery showcasing the beauty of light and shadow through curated photography.",
+        image: "./exposio.png",
+        tech: ["ReactJS", "TailwindCSS", "Pixabay API", "Vercel"],
+        live: "https://exposio-gallery.vercel.app/",
+        github: "https://github.com/arifbasha559/exposio",
+    },
 ];
 
 export default function Projects() {
