@@ -77,7 +77,7 @@ const projects = [
         title: "My Leads (Extension)",
         description:
             "A simple and smart Chrome extension to capture and manage links directly from your browser.",
-        image: "./my-leads.png",
+        image: "./myLeads.png",
         tech: ["ReactJS", "TailwindCSS", "Vercel", "Manifest V3"],
         category: "Other",
         live: "https://my-leads-website.vercel.app/",
