@@ -9,33 +9,33 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
 
 const projects = [
-   {
-        title: "MovieX App",
-        description:
-            "A movie discovery app that helps users find and explore films based on their preferences.",
-        image: "./movieX.png",
-        tech: ["ReactNative", "Nativewind", "TMDB API", "Expo"],
-        live: "https://movie-x-red.vercel.app/",
-        github: "https://github.com/arifbasha559/moviex",
-    },
-    {
-        title: "JARVIS Voice Assistant",
-        description:
-        "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
-        image: "./jarvis-assistant.png",
-        tech: ["ReactJS", "TailwindCSS", "Vercel"],
-        live: "https://tony-jarvis.vercel.app/",
-        github: "https://github.com/arifbasha559/Jarvis",
-    },
-    {
-        title: "Exposio Gallery",
-        description:
-            "A gallery showcasing the beauty of light and shadow through curated photography.",
-        image: "./exposio.png",
-        tech: ["ReactJS", "TailwindCSS", "Pixabay API", "Vercel"],
-        live: "https://exposio-gallery.vercel.app/",
-        github: "https://github.com/arifbasha559/exposio",
-    },
+  {
+    title: "MovieX App",
+    description:
+      "A movie discovery app that helps users find and explore films based on their preferences.",
+    image: "./movieX.png",
+    tech: ["ReactNative", "Nativewind", "TMDB API", "Expo"],
+    live: "https://movie-x-red.vercel.app/",
+    github: "https://github.com/arifbasha559/moviex",
+  },
+  {
+    title: "JARVIS Voice Assistant",
+    description:
+      "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
+    image: "./jarvis-assistant.png",
+    tech: ["ReactJS", "TailwindCSS", "Vercel"],
+    live: "https://tony-jarvis.vercel.app/",
+    github: "https://github.com/arifbasha559/Jarvis",
+  },
+  {
+    title: "Exposio Gallery",
+    description:
+      "A gallery showcasing the beauty of light and shadow through curated photography.",
+    image: "./exposio.png",
+    tech: ["ReactJS", "TailwindCSS", "Pixabay API", "Vercel"],
+    live: "https://exposio-gallery.vercel.app/",
+    github: "https://github.com/arifbasha559/exposio",
+  },
 ];
 
 export default function Projects() {
@@ -94,32 +94,35 @@ export default function Projects() {
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
+              {/* Image */}
               <div className="relative h-56 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className=" w-full object-top brightness-125 saturate-150 h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-linear"
+                  className="w-full h-full object-cover object-top brightness-125 saturate-150 group-hover:scale-110 transition-transform duration-500 ease-linear"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
 
-                <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* Icons */}
+                <div className="absolute top-4 right-4 flex gap-2 opacity-0  group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.github}
-                    className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-green-500 transition-colors"
-                    onClick={(e) => e.preventDefault()}
+                    target="_blank"
+                    className="p-2 z-50 bg-black/50 backdrop-blur-sm   rounded-full hover:bg-green-500 transition-colors"
                   >
                     <Github size={20} className="text-white" />
                   </a>
                   <a
                     href={project.live}
-                    className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-blue-500 transition-colors"
-                    onClick={(e) => e.preventDefault()}
+                    target="_blank"
+                    className="p-2 z-50 bg-black/50 backdrop-blur-sm rounded-full hover:bg-blue-500 transition-colors"
                   >
                     <ExternalLink size={20} className="text-white" />
                   </a>
                 </div>
               </div>
 
+              {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                   {project.title}
@@ -130,9 +133,9 @@ export default function Projects() {
                 </p>
 
                 <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, techIndex) => (
+                  {project.tech.map((tech, i) => (
                     <span
-                      key={techIndex}
+                      key={i}
                       className="px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 text-xs font-medium"
                     >
                       {tech}
@@ -141,7 +144,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/30 rounded-xl transition-all duration-300 pointer-events-none" />
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/30 rounded-xl transition-all duration-300 pointer-events-none z-10" />
             </div>
           ))}
         </div>

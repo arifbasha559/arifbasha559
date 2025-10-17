@@ -1,5 +1,7 @@
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { use } from "react";
 import { useEffect, useRef, useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router";
 
 const projects = [
@@ -26,7 +28,7 @@ const projects = [
     {
         title: "JARVIS Voice Assistant",
         description:
-        "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
+            "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
         image: "./jarvis-assistant.png",
         tech: ["ReactJS", "TailwindCSS", "Vercel"],
         category: "Web",
@@ -108,7 +110,7 @@ const projects = [
         description:
             "A tool for converting different file formats to another.",
         image: "./pi-converter.png",
-        tech: ["HTML", "CSS", "Javascript",  "Vercel"],
+        tech: ["HTML", "CSS", "Javascript", "Vercel"],
         category: "Web",
         live: "https://pi-converter.vercel.app/",
         github: "https://github.com/arifbasha559/pi-converter",
@@ -140,12 +142,28 @@ const AllProjects = () => {
             ? projects
             : projects.filter((p) => p.category === selectedValue);
 
+    const scrollToSection = () => {
+        const element = document.getElementById("projects");
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+    useEffect(() => {
+        scrollToSection();
+    }, []);
     return (
         <section
             id="projects"
             ref={sectionRef}
             className="relative py-20 px-6 overflow-hidden"
         >
+            <Helmet>
+                <title>ArifBasha | Projects</title>
+                <meta name="description" content="Explore a curated selection of my projects, showcasing my skills and creativity across various domains." />
+                <meta name="keywords" content="Arif Basha, Projects, Portfolio, Web Development, Android Development, Tech-Zen, MovieX App, JARVIS Voice Assistant, Exposio Gallery, JARVIS Cyber Dashboard, Word Bridge, Mak Todos, My Leads Extension, Random String Generator, Todays News, PI Converter" />
+                <meta name="author" content="Arif Basha" />
+                <link rel="canonical" href="https://arifbasha559.vercel.app/projects" />
+            </Helmet>
             {/* Back Button */}
             <Link
                 to="/"
@@ -165,36 +183,42 @@ const AllProjects = () => {
                         }`}
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
-                        Featured Projects
+                        My Projects
                     </h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto rounded-full" />
                     <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-                        A showcase of my latest projects across web development, extensions,
-                        and more.
+                        Explore a curated selection of my projects, showcasing my skills
+                        and creativity across various domains.
                     </p>
                 </div>
 
                 {/* Filter Options */}
                 <div className="flex flex-col mx-auto w-fit justify-center my-6 gap-4">
-                    <label className="text-sm font-medium text-gray-200">
+                    <label className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-400 tracking-wide uppercase">
                         Filter by Project Type
                     </label>
-                    <div className="flex gap-6">
+                    <div className="flex flex-wrap gap-4">
                         {["All", "Web", "Android", "Other"].map((option) => (
-                            <label key={option} className="flex items-center gap-2 cursor-pointer">
+                            <label
+                                key={option}
+                                className={`relative flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 
+      ${selectedValue === option
+                                        ? "bg-gradient-to-r from-blue-500 to-violet-500 text-white shadow-[0_0_15px_rgba(59,130,246,0.6)] scale-105"
+                                        : "bg-blue-500/10 text-gray-400 hover:bg-blue-500/20 hover:text-blue-300"
+                                    }`}
+                            >
                                 <input
                                     type="radio"
                                     value={option}
                                     checked={selectedValue === option}
                                     onChange={handleChange}
-                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
+                                    className="hidden"
                                 />
-                                <span className="text-sm font-medium text-gray-400">
-                                    {option}
-                                </span>
+                                <span className="text-sm font-medium">{option}</span>
                             </label>
                         ))}
                     </div>
+
                 </div>
 
                 {/* Project Grid */}
@@ -216,23 +240,21 @@ const AllProjects = () => {
                                     alt={project.title}
                                     className="w-full h-full object-cover object-top brightness-125 saturate-150 group-hover:scale-110 transition-transform duration-500 ease-linear"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                                <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
 
                                 {/* Icons */}
-                                <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div className="absolute top-4 right-4 flex gap-2 opacity-0  group-hover:opacity-100 transition-opacity duration-300">
                                     <a
                                         href={project.github}
                                         target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-green-500 transition-colors"
+                                        className="p-2 z-50 bg-black/50 backdrop-blur-sm   rounded-full hover:bg-green-500 transition-colors"
                                     >
                                         <Github size={20} className="text-white" />
                                     </a>
                                     <a
                                         href={project.live}
                                         target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-blue-500 transition-colors"
+                                        className="p-2 z-50 bg-black/50 backdrop-blur-sm rounded-full hover:bg-blue-500 transition-colors"
                                     >
                                         <ExternalLink size={20} className="text-white" />
                                     </a>
@@ -261,7 +283,7 @@ const AllProjects = () => {
                                 </div>
                             </div>
 
-                            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/30 rounded-xl transition-all duration-300 pointer-events-none" />
+                            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/30 rounded-xl transition-all duration-300 pointer-events-none z-10" />
                         </div>
                     ))}
                     {filteredProjects.length === 0 && (

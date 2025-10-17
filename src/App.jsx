@@ -12,6 +12,7 @@ import BackToTop from "./components/BackToTop";
 import AOS from "aos";
 import AllProjects from "./AllProjects";
 import './App.css'
+import { Helmet } from "react-helmet";
 const HomePage = () => {
   const scrollToSection = () => {
     const element = document.getElementById("home");
@@ -31,6 +32,13 @@ const HomePage = () => {
 
   return (
     <div className="bg-black text-white text-wrap">
+      <Helmet>
+        <title>ArifBasha | Portfolio</title>
+        <meta name="description" content="Welcome to Arif Basha's personal portfolio website. Explore my projects, skills, and get in touch!" />
+        <meta name="keywords" content="Arif Basha, Portfolio, Web Developer, Android Developer, Projects, Skills, Contact" />
+        <meta name="author" content="Arif Basha" />
+        <link rel="canonical" href="https://arifbasha559.vercel.app/" />
+      </Helmet> 
       <Sidebar />
       <MobileNav />
       <main>
