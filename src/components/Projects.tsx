@@ -1,9 +1,7 @@
 import {
   ArrowRight,
   ExternalLink,
-  ExternalLinkIcon,
   Github,
-  LucideExternalLink,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";

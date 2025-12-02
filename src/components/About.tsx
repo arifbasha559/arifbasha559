@@ -80,10 +80,8 @@ export default function About() {
           >
             <div className="relative group">
               <div className="absolute -inset-14 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
-              <div className="max-w-md relative m-auto bg-gradient-to-br from-blue-900/20 to-violet-900/20 rounded-2xl p-8 border border-blue-500/20">
-                <div className="aspect-square  text-5xl font-bold text-wrap rounded-xl flex items-center justify-center">
-                  AB
-                </div>
+              <div className="max-w-md relative m-auto bg-gradient-to-br from-blue-900/20 to-violet-900/20 rounded-2xl  border border-blue-500/20 overflow-hidden">
+                <img src="./Profile.jpg" className="aspect-square object-cover hover:scale-110 transition-transform duration-300 ease-in-out text-5xl font-bold text-wrap rounded-xl flex items-center justify-center"/>
               </div>
             </div>
           </div>

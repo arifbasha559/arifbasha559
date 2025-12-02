@@ -1,10 +1,20 @@
-import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Images } from "lucide-react";
 import { use } from "react";
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router";
 
 const projects = [
+    {
+        title: "Dev-Next",
+        description:
+            "A modern, full-stack blogging platform. It includes a secure admin panel, dynamic post management, categories, tags, a fully responsive UI, and SEO-friendly blog pages.",
+        image: "./devNext.png",
+        tech: ["NextJS", "ReactJS", "MongoDB", "Shadcn UI"],
+        category: "Web",
+        live: "https://dev-next-lyart.vercel.app/",
+        github: "https://github.com/arifbasha559/Dev-Next",
+    },
     {
         title: "Tech-Zen",
         description:
@@ -121,7 +131,7 @@ const AllProjects = () => {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
     const [selectedValue, setSelectedValue] = useState("All");
-
+    const [images, setImages] = useState(false);
     // Animate on scroll
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -197,7 +207,7 @@ const AllProjects = () => {
                     <label className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-400 tracking-wide uppercase">
                         Filter by Project Type
                     </label>
-                    <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-wrap gap-4 ">
                         {["All", "Web", "Android", "Other"].map((option) => (
                             <label
                                 key={option}
@@ -217,9 +227,28 @@ const AllProjects = () => {
                                 <span className="text-sm font-medium">{option}</span>
                             </label>
                         ))}
+                        <div className="flex items-center gap-2  ml-auto">
+
+                            <label
+                                className={`relative flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 
+      ${images
+                                        ? "bg-gradient-to-r from-blue-500 to-violet-500 text-white shadow-[0_0_15px_rgba(59,130,246,0.6)] scale-105"
+                                        : "bg-blue-500/10 text-gray-400 hover:bg-blue-500/20 hover:text-blue-300"
+                                    }`}
+                            >
+                                <input
+                                    type="checkbox"
+                                    checked={images}
+                                    onChange={() => setImages(!images)}
+                                    className="hidden"
+                                />
+                                <span className="text-sm font-medium"><Images /></span>
+                            </label>
+                        </div>
                     </div>
 
                 </div>
+
 
                 {/* Project Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -234,16 +263,40 @@ const AllProjects = () => {
                             style={{ transitionDelay: `${index * 100}ms` }}
                         >
                             {/* Image */}
-                            <div className="relative h-56 overflow-hidden">
+                            {images && <div className="relative h-56 overflow-hidden">
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover object-top brightness-125 saturate-150 group-hover:scale-110 transition-transform duration-500 ease-linear"
+                                    className={`w-full h-full object-cover object-top brightness-125 saturate-150 
+                 group-hover:scale-110 transition-all duration-700 ease-out
+                 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+                                    style={{ transitionDelay: `${index * 120}ms` }}
                                 />
+
                                 <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
 
                                 {/* Icons */}
-                                <div className="absolute top-4 right-4 flex gap-2 opacity-0  group-hover:opacity-100 transition-opacity duration-300">
+                                <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a
+                                        href={project.github}
+                                        target="_blank"
+                                        className="p-2 z-50 bg-black/50 backdrop-blur-sm rounded-full hover:bg-green-500 transition-colors"
+                                    >
+                                        <Github size={20} className="text-white" />
+                                    </a>
+                                    <a
+                                        href={project.live}
+                                        target="_blank"
+                                        className="p-2 z-50 bg-black/50 backdrop-blur-sm rounded-full hover:bg-blue-500 transition-colors"
+                                    >
+                                        <ExternalLink size={20} className="text-white" />
+                                    </a>
+                                </div>
+                            </div>}
+
+                            {/* Content */}
+                            <div className="p-6 relative">
+                                {!images && <div className="absolute top-4 right-4 flex gap-2 opacity-0  group-hover:opacity-100 transition-opacity duration-300">
                                     <a
                                         href={project.github}
                                         target="_blank"
@@ -258,11 +311,7 @@ const AllProjects = () => {
                                     >
                                         <ExternalLink size={20} className="text-white" />
                                     </a>
-                                </div>
-                            </div>
-
-                            {/* Content */}
-                            <div className="p-6">
+                                </div>}
                                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                                     {project.title}
                                 </h3>
@@ -293,7 +342,7 @@ const AllProjects = () => {
                     )}
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 
