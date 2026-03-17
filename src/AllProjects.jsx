@@ -6,124 +6,144 @@ import { Link } from "react-router";
 
 const projects = [
     {
-        title: "Dev-Next",
+        title: "Desktop AI Assistant (Python)",
         description:
-            "A modern, full-stack blogging platform. It includes a secure admin panel, dynamic post management, categories, tags, a fully responsive UI, and SEO-friendly blog pages.",
-        image: "./devNext.png",
-        tech: ["NextJS", "ReactJS", "MongoDB", "Shadcn UI"],
-        category: "Web",
-        live: "https://dev-next-lyart.vercel.app/",
-        github: "https://github.com/arifbasha559/Dev-Next",
-    },
-    {
-        title: "Tech-Zen",
-        description:
-            "A modern, user-friendly blog platform designed for tech enthusiasts, developers, and curious minds.",
-        image: "./tech-zen.png",
-        tech: ["ReactJS", "NodeJS", "MongoDB", "ExpressJS"],
-        category: "Web",
-        live: "https://tech-zen.vercel.app/",
-        github: "https://github.com/arifbasha559/tech-zen",
-    },
-    {
-        title: "MovieX App",
-        description:
-            "A movie discovery app that helps users find and explore films based on their preferences.",
-        image: "./movieX.png",
-        tech: ["ReactNative", "Nativewind", "TMDB API", "Expo"],
-        category: "Android",
-        live: "https://movie-x-red.vercel.app",
-        github: "https://github.com/arifbasha559/moviex",
-    },
-    {
-        title: "JARVIS Voice Assistant",
-        description:
-            "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
-        image: "./jarvis-assistant.png",
-        tech: ["ReactJS", "TailwindCSS", "Vercel"],
-        category: "Web",
-        live: "https://tony-jarvis.vercel.app/",
-        github: "https://github.com/arifbasha559/Jarvis",
-    },
-    {
-        title: "Exposio Gallery",
-        description:
-            "A gallery showcasing the beauty of light and shadow through curated photography.",
-        image: "./exposio.png",
-        tech: ["ReactJS", "TailwindCSS", "Pixabay API", "Vercel"],
-        category: "Web",
-        live: "https://exposio-gallery.vercel.app/",
-        github: "https://github.com/arifbasha559/exposio",
-    },
-    {
-        title: "JARVIS Cyber Dashboard",
-        description:
-            "A futuristic, real-time cybersecurity monitoring dashboard inspired by Iron Man’s J.A.R.V.I.S interface.",
-        image: "./dashboard.png",
-        tech: ["ReactJS", "TailwindCSS", "Vercel"],
-        category: "Web",
-        live: "https://jarvis-cyber-dashboard.vercel.app/",
-        github: "https://github.com/arifbasha559/jarvis-cyber-dashboard",
-    },
-    {
-        title: "Word Bridge",
-        description:
-            "A translation app that bridges language gaps, making communication seamless and accessible.",
-        image: "./wordbridge.png",
-        tech: ["ReactJS", "TailwindCSS", "Vercel", "DeepTranslate API"],
-        category: "Web",
-        live: "https://wordbridge-three.vercel.app/",
-        github: "https://github.com/arifbasha559/wordbridge",
-    },
-    {
-        title: "Mak Todos",
-        description:
-            "A minimalist and user-friendly todo app to help you organize tasks efficiently.",
-        image: "./Mak-todos.png",
-        tech: ["ReactJS", "TailwindCSS", "Vercel"],
-        category: "Web",
-        live: "https://mak-todos.vercel.app/",
-        github: "https://github.com/arifbasha559/mak-todos",
-    },
-    {
-        title: "My Leads (Extension)",
-        description:
-            "A simple and smart Chrome extension to capture and manage links directly from your browser.",
-        image: "./myLeads.png",
-        tech: ["ReactJS", "TailwindCSS", "Vercel", "Manifest V3"],
+            "A Python-based desktop assistant that runs completely offline using local AI model. It features a futuristic Sci-Fi GUI, voice interaction, system control, and multimodal vision capabilities. ",
+        image: "./py-desk-ai.gif",
+        tech: ["Python", "PyQt5", "Ollama"],
         category: "Other",
-        live: "https://my-leads-website.vercel.app/",
-        github: "https://github.com/arifbasha559/MyLeads",
+        live: "https://github.com/arifbasha559/ai-desktop-assistant/",
+        github: "https://github.com/arifbasha559/ai-desktop-assistant/",
     },
     {
-        title: "Random String Generator",
+        title: "DocMind-AI (Python)",
         description:
-            "A secure and random password generator for creating strong, unique credentials.",
+            "A local, offline PDF Question – Answer generator powered by a local LLM (Ollama). It automatically extracts content from PDFs, generates all possible questions & answers.",
+        image: "./docMind.png",
+    tech: ["Python", "PyQt5", "Ollama"],
+    category: "Other",
+    live: "https://github.com/arifbasha559/DocMind-AI",
+    github: "https://github.com/arifbasha559/DocMind-AI",
+    },
+{
+    title: "Dev-Next",
+        description:
+    "A modern, full-stack blogging platform. It includes a secure admin panel, dynamic post management, categories, tags, a fully responsive UI, and SEO-friendly blog pages.",
+        image: "./devNext.png",
+            tech: ["NextJS", "ReactJS", "MongoDB", "Shadcn UI"],
+                category: "Web",
+                    live: "https://dev-next-lyart.vercel.app/",
+                        github: "https://github.com/arifbasha559/Dev-Next",
+    },
+{
+    title: "Tech-Zen",
+        description:
+    "A modern, user-friendly blog platform designed for tech enthusiasts, developers, and curious minds.",
+        image: "./tech-zen.png",
+            tech: ["ReactJS", "NodeJS", "MongoDB", "ExpressJS"],
+                category: "Web",
+                    live: "https://tech-zen.vercel.app/",
+                        github: "https://github.com/arifbasha559/tech-zen",
+    },
+{
+    title: "MovieX App",
+        description:
+    "A movie discovery app that helps users find and explore films based on their preferences.",
+        image: "./movieX.png",
+            tech: ["ReactNative", "Nativewind", "TMDB API", "Expo"],
+                category: "Android",
+                    live: "https://movie-x-red.vercel.app",
+                        github: "https://github.com/arifbasha559/moviex",
+    },
+{
+    title: "JARVIS Voice Assistant",
+        description:
+    "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
+        image: "./jarvis-assistant.png",
+            tech: ["ReactJS", "TailwindCSS", "Vercel"],
+                category: "Web",
+                    live: "https://tony-jarvis.vercel.app/",
+                        github: "https://github.com/arifbasha559/Jarvis",
+    },
+{
+    title: "Exposio Gallery",
+        description:
+    "A gallery showcasing the beauty of light and shadow through curated photography.",
+        image: "./exposio.png",
+            tech: ["ReactJS", "TailwindCSS", "Pixabay API", "Vercel"],
+                category: "Web",
+                    live: "https://exposio-gallery.vercel.app/",
+                        github: "https://github.com/arifbasha559/exposio",
+    },
+{
+    title: "JARVIS Cyber Dashboard",
+        description:
+    "A futuristic, real-time cybersecurity monitoring dashboard inspired by Iron Man’s J.A.R.V.I.S interface.",
+        image: "./dashboard.png",
+            tech: ["ReactJS", "TailwindCSS", "Vercel"],
+                category: "Web",
+                    live: "https://jarvis-cyber-dashboard.vercel.app/",
+                        github: "https://github.com/arifbasha559/jarvis-cyber-dashboard",
+    },
+{
+    title: "Word Bridge",
+        description:
+    "A translation app that bridges language gaps, making communication seamless and accessible.",
+        image: "./wordbridge.png",
+            tech: ["ReactJS", "TailwindCSS", "Vercel", "DeepTranslate API"],
+                category: "Web",
+                    live: "https://wordbridge-three.vercel.app/",
+                        github: "https://github.com/arifbasha559/wordbridge",
+    },
+{
+    title: "Mak Todos",
+        description:
+    "A minimalist and user-friendly todo app to help you organize tasks efficiently.",
+        image: "./Mak-todos.png",
+            tech: ["ReactJS", "TailwindCSS", "Vercel"],
+                category: "Web",
+                    live: "https://mak-todos.vercel.app/",
+                        github: "https://github.com/arifbasha559/mak-todos",
+    },
+{
+    title: "My Leads (Extension)",
+        description:
+    "A simple and smart Chrome extension to capture and manage links directly from your browser.",
+        image: "./myLeads.png",
+            tech: ["ReactJS", "TailwindCSS", "Vercel", "Manifest V3"],
+                category: "Other",
+                    live: "https://my-leads-website.vercel.app/",
+                        github: "https://github.com/arifbasha559/MyLeads",
+    },
+{
+    title: "Random String Generator",
+        description:
+    "A secure and random password generator for creating strong, unique credentials.",
         image: "./rsg.png",
-        tech: ["ReactJS", "TailwindCSS", "Vercel"],
-        category: "Web",
-        live: "https://rand-str-gen.vercel.app/",
-        github: "https://github.com/arifbasha559/Rand-str-Gen",
+            tech: ["ReactJS", "TailwindCSS", "Vercel"],
+                category: "Web",
+                    live: "https://rand-str-gen.vercel.app/",
+                        github: "https://github.com/arifbasha559/Rand-str-Gen",
     },
-    {
-        title: "Todays News",
+{
+    title: "Todays News",
         description:
-            "A news aggregator app that provides the latest headlines from various sources.",
+    "A news aggregator app that provides the latest headlines from various sources.",
         image: "./todays-News.png",
-        tech: ["HTML", "TailwindCSS", "News API", "Vercel"],
-        category: "Web",
-        live: "https://todaysnews-zeta.vercel.app/",
-        github: "https://github.com/arifbasha559/todaysnews",
+            tech: ["HTML", "TailwindCSS", "News API", "Vercel"],
+                category: "Web",
+                    live: "https://todaysnews-zeta.vercel.app/",
+                        github: "https://github.com/arifbasha559/todaysnews",
     },
-    {
-        title: "PI Converter",
+{
+    title: "PI Converter",
         description:
-            "A tool for converting different file formats to another.",
+    "A tool for converting different file formats to another.",
         image: "./pi-converter.png",
-        tech: ["HTML", "CSS", "Javascript", "Vercel"],
-        category: "Web",
-        live: "https://pi-converter.vercel.app/",
-        github: "https://github.com/arifbasha559/pi-converter",
+            tech: ["HTML", "CSS", "Javascript", "Vercel"],
+                category: "Web",
+                    live: "https://pi-converter.vercel.app/",
+                        github: "https://github.com/arifbasha559/pi-converter",
     },
 ];
 
@@ -264,6 +284,7 @@ const AllProjects = () => {
                         >
                             {/* Image */}
                             {images && <div className="relative h-56 overflow-hidden">
+
                                 <img
                                     src={project.image}
                                     alt={project.title}
