@@ -58,10 +58,11 @@ export default function Hero() {
             <Typewriter
               words={[
                 "Student",
-                "UX/UI Designer",
                 "Frontend Developer",
                 "Tech Enthusiast!",
                 "Creative Developer",
+                "Problem Solver",
+                "Lifelong Learner",
               ]}
               loop
               cursor
