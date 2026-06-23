@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://twitter.com/arifbasha559" target="_blank">
-    <img src="https://img.shields.io/twitter/follow/arifbasha559?logo=twitter&style=for-the-badge" alt="Twitter Follow" />
+    <img src="https://img.shields.io/twitter/follow/arifbasha559?logo=x&style=for-the-badge" alt="Twitter Follow" />
   </a>
 </p>
 
@@ -20,9 +20,9 @@ With a deep curiosity for modern technologies, I focus on building seamless digi
 
 I enjoy turning ideas into reality through clean, maintainable code and intuitive UI/UX design.
 
-- 🔭 Currently working on: **AcadeX**
-- 🌱 Learning: **Next.js**, **React Native**, and **System Design**
-- 💬 Ask me about: **React.js, JavaScript, or Frontend Architecture**
+- 🔭 Currently working on: **[Anonymous Desk](https://github.com/arifbasha559/anonymous-desk)**
+- 🌱 Learning: **Python**
+- 💬 Ask me about: **React.js, React Native, or Frontend Architecture**
 - 🌐 Portfolio: [arifbasha559.vercel.app](https://arifbasha559.vercel.app)
 - 📫 Reach me at: **arifbasha559@gmail.com**
 
@@ -30,10 +30,10 @@ I enjoy turning ideas into reality through clean, maintainable code and intuitiv
 
 ### 🎯 Current Focus
 
-- Building full-stack apps with **Next.js** and **MongoDB**
+- Building full-stack apps with **React Native** and **Express**
 - Exploring **AI + Frontend** integrations
 - Enhancing performance with **React optimization techniques**
-- Designing responsive UIs using **TailwindCSS** and **Framer Motion**
+- Designing responsive UIs using **NativeWind** and **Framer Motion**
 
 ---
 
@@ -58,11 +58,11 @@ I enjoy turning ideas into reality through clean, maintainable code and intuitiv
 <div align="center">
 <a href="https://appwrite.io" target="_blank"><img src="https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg" alt="Appwrite" width="50" height="50"/></a>
 <a href="https://www.w3schools.com/css/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="50" height="50"/></a>
-<a href="https://expressjs.com" target="_blank"><img style="filter: invert(1);" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="50" height="50"/></a>
+<a href="https://expressjs.com" target="_blank"><img style="filter: invert(1);" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="Express" width="50" height="50"/></a>
 <a href="https://www.figma.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" width="50" height="50"/></a>
 <a href="https://git-scm.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="50" height="50"/></a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50"/></a>
-<a href="https://nextjs.org/" target="_blank"><img style="filter: invert(1);" src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="Next.js" width="50" height="50"/></a>
+<a href="https://nextjs.org/" target="_blank"><img style="filter: invert(1);" src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js" width="50" height="50"/></a>
 <a href="https://nodejs.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="50" height="50"/></a>
 <a href="https://reactjs.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="50" height="50"/></a>
 <a href="https://reactnative.dev/" target="_blank"><img src="https://reactnative.dev/img/header_logo.svg" alt="React Native" width="50" height="50"/></a>
@@ -72,7 +72,7 @@ I enjoy turning ideas into reality through clean, maintainable code and intuitiv
 <a href="https://postman.com" target="_blank"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="50" height="50"/></a>
 <a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="50" height="50"/></a>
 <a href="https://www.oracle.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="Oracle" width="50" height="50"/></a>
-<a href="https://www.photoshop.com/en" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" style="filter: invert(1);" alt="Photoshop" width="50" height="50"/></a>
+<a href="https://www.photoshop.com/en" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-original.svg" style="filter: invert(0);" alt="Photoshop" width="50" height="50"/></a>
 <a href="https://www.linux.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="50" height="50"/></a>
 
 </div>
@@ -82,17 +82,17 @@ I enjoy turning ideas into reality through clean, maintainable code and intuitiv
 ### 🧩 GitHub Stats & Activity
 
 <p align="center" >
-  <img  src="https://github-readme-stats.vercel.app/api/top-langs?username=arifbasha559&show_icons=true&locale=en&layout=compact" alt="Top Languages" />
+  <img  src="https://github-readme-stats.vercel.app/api/top-langs?username=arifbasha559&show_icons=true&locale=en&layout=compact&theme=transparent" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img  src="https://github-readme-stats.vercel.app/api?username=arifbasha559&show_icons=true&locale=en" alt="GitHub Stats" />
-   <img src="https://github-readme-streak-stats.herokuapp.com/?user=arifbasha559&theme=dark" alt="GitHub Streak" />
+  <img  src="https://github-readme-stats.vercel.app/api?username=arifbasha559&theme=transparent&show_icons=true&locale=en" alt="GitHub Stats" />
+   <img src="https://github-readme-streak-stats.herokuapp.com/?user=arifbasha559&theme=transparent" alt="GitHub Streak" />
 </p>
 
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=arifbasha559&margin-w=10&theme=flat" alt="GitHub Trophies" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=arifbasha559&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&hide_border=true" alt="GitHub Trophies" />
 </p>
 
 ---
