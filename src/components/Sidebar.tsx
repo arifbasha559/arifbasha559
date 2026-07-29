@@ -56,6 +56,8 @@ export default function Sidebar() {
                 
                 <button
                   onClick={() => scrollToSection(item.id)}
+                  aria-label={`Go to ${item.label}`}
+                  aria-current={isActive ? "page" : undefined}
                   className={`group flex items-center w-full justify-between gap-3 transition-all duration-300 ${
                     isActive
                       ? "text-blue-400"

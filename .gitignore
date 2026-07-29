@@ -21,3 +21,15 @@ dist-ssr
 *.sln
 *.sw?
 .env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Vike / build cache
+.vike

@@ -11,7 +11,7 @@ const projects = [
     title: "MovieX App",
     description:
       "A movie discovery app that helps users find and explore films based on their preferences.",
-    image: "./movieX.png",
+    image: "./movieX.webp",
     tech: ["ReactNative", "Nativewind", "TMDB API", "Expo"],
     live: "https://movie-x-red.vercel.app/",
     github: "https://github.com/arifbasha559/moviex",
@@ -20,7 +20,7 @@ const projects = [
     title: "JARVIS Voice Assistant",
     description:
       "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
-    image: "./jarvis-assistant.png",
+    image: "./jarvis-assistant.webp",
     tech: ["ReactJS", "TailwindCSS", "Vercel"],
     live: "https://tony-jarvis.vercel.app/",
     github: "https://github.com/arifbasha559/Jarvis",
@@ -29,7 +29,7 @@ const projects = [
     title: "Exposio Gallery",
     description:
       "A gallery showcasing the beauty of light and shadow through curated photography.",
-    image: "./exposio.png",
+    image: "./exposio.webp",
     tech: ["ReactJS", "TailwindCSS", "Pixabay API", "Vercel"],
     live: "https://exposio-gallery.vercel.app/",
     github: "https://github.com/arifbasha559/exposio",
@@ -83,7 +83,7 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <article
               key={index}
               className={`group relative bg-gradient-to-br from-blue-900/10 to-violet-900/10 rounded-xl overflow-hidden border border-blue-500/20 hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(59,130,246,0.3)] ${
                 isVisible
@@ -93,12 +93,16 @@ export default function Projects() {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Image */}
-              <div className="relative h-56 overflow-hidden">
+              <figure className="relative h-56 overflow-hidden">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  lazy='true'
+                  alt={`${project.title} project screenshot`}
                   className="w-full h-full object-cover object-top brightness-125 saturate-150 group-hover:scale-110 transition-transform duration-500 ease-linear"
                 />
+                <figcaption className="sr-only">
+                  Screenshot of {project.title}
+                </figcaption>
                 <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
 
                 {/* Icons */}
@@ -106,19 +110,23 @@ export default function Projects() {
                   <a
                     href={project.github}
                     target="_blank"
+                    rel="noreferrer noopener"
                     className="p-2 z-50 bg-black/50 backdrop-blur-sm   rounded-full hover:bg-green-500 transition-colors"
+                    aria-label={`Open ${project.title} source code`}
                   >
                     <Github size={20} className="text-white" />
                   </a>
                   <a
                     href={project.live}
                     target="_blank"
+                    rel="noreferrer noopener"
                     className="p-2 z-50 bg-black/50 backdrop-blur-sm rounded-full hover:bg-blue-500 transition-colors"
+                    aria-label={`Visit live demo of ${project.title}`}
                   >
                     <ExternalLink size={20} className="text-white" />
                   </a>
                 </div>
-              </div>
+              </figure>
 
               {/* Content */}
               <div className="p-6">
@@ -143,16 +151,17 @@ export default function Projects() {
               </div>
 
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/30 rounded-xl transition-all duration-300 pointer-events-none z-10" />
-            </div>
+            </article>
           ))}
         </div>
-        <Link
-          to="/projects"
+        <a
+          href="/projects"
           className="plink w-fit mx-auto mt-10 bg-gradient-to-r from-blue-500 to-violet-500 rounded-lg px-6 py-4 text-white font-semibold shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:shadow-[0_0_50px_rgba(59,130,246,0.8)] transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+          aria-label="See All Projects"
         >
           See All Projects
           <ArrowRight className="w-5 h-5 group-hover: animate-bounce-horizontal  transition-all duration-300" />
-        </Link>
+        </a>
       </div>
     </section>
   );

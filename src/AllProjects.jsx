@@ -19,7 +19,7 @@ const projects = [
         title: "DocMind-AI (Python)",
         description:
             "A local, offline PDF Question – Answer generator powered by a local LLM (Ollama). It automatically extracts content from PDFs, generates all possible questions & answers.",
-        image: "./docMind.png",
+        image: "./docMind.webp",
     tech: ["Python", "PyQt5", "Ollama"],
     category: "Other",
     live: "https://github.com/arifbasha559/DocMind-AI",
@@ -29,7 +29,7 @@ const projects = [
     title: "Dev-Next",
         description:
     "A modern, full-stack blogging platform. It includes a secure admin panel, dynamic post management, categories, tags, a fully responsive UI, and SEO-friendly blog pages.",
-        image: "./devNext.png",
+        image: "./devNext.webp",
             tech: ["NextJS", "ReactJS", "MongoDB", "Shadcn UI"],
                 category: "Web",
                     live: "https://dev-next-lyart.vercel.app/",
@@ -39,7 +39,7 @@ const projects = [
     title: "Tech-Zen",
         description:
     "A modern, user-friendly blog platform designed for tech enthusiasts, developers, and curious minds.",
-        image: "./tech-zen.png",
+        image: "./tech-zen.webp",
             tech: ["ReactJS", "NodeJS", "MongoDB", "ExpressJS"],
                 category: "Web",
                     live: "https://tech-zen.vercel.app/",
@@ -49,7 +49,7 @@ const projects = [
     title: "MovieX App",
         description:
     "A movie discovery app that helps users find and explore films based on their preferences.",
-        image: "./movieX.png",
+        image: "./movieX.webp",
             tech: ["ReactNative", "Nativewind", "TMDB API", "Expo"],
                 category: "Android",
                     live: "https://movie-x-red.vercel.app",
@@ -59,7 +59,7 @@ const projects = [
     title: "JARVIS Voice Assistant",
         description:
     "A futuristic voice assistant application inspired by Iron Man’s J.A.R.V.I.S interface.",
-        image: "./jarvis-assistant.png",
+        image: "./jarvis-assistant.webp",
             tech: ["ReactJS", "TailwindCSS", "Vercel"],
                 category: "Web",
                     live: "https://tony-jarvis.vercel.app/",
@@ -69,7 +69,7 @@ const projects = [
     title: "Exposio Gallery",
         description:
     "A gallery showcasing the beauty of light and shadow through curated photography.",
-        image: "./exposio.png",
+        image: "./exposio.webp",
             tech: ["ReactJS", "TailwindCSS", "Pixabay API", "Vercel"],
                 category: "Web",
                     live: "https://exposio-gallery.vercel.app/",
@@ -79,7 +79,7 @@ const projects = [
     title: "JARVIS Cyber Dashboard",
         description:
     "A futuristic, real-time cybersecurity monitoring dashboard inspired by Iron Man’s J.A.R.V.I.S interface.",
-        image: "./dashboard.png",
+        image: "./dashboard.webp",
             tech: ["ReactJS", "TailwindCSS", "Vercel"],
                 category: "Web",
                     live: "https://jarvis-cyber-dashboard.vercel.app/",
@@ -89,7 +89,7 @@ const projects = [
     title: "Word Bridge",
         description:
     "A translation app that bridges language gaps, making communication seamless and accessible.",
-        image: "./wordbridge.png",
+        image: "./wordbridge.webp",
             tech: ["ReactJS", "TailwindCSS", "Vercel", "DeepTranslate API"],
                 category: "Web",
                     live: "https://wordbridge-three.vercel.app/",
@@ -99,7 +99,7 @@ const projects = [
     title: "Mak Todos",
         description:
     "A minimalist and user-friendly todo app to help you organize tasks efficiently.",
-        image: "./Mak-todos.png",
+        image: "./Mak-todos.webp",
             tech: ["ReactJS", "TailwindCSS", "Vercel"],
                 category: "Web",
                     live: "https://mak-todos.vercel.app/",
@@ -109,7 +109,7 @@ const projects = [
     title: "My Leads (Extension)",
         description:
     "A simple and smart Chrome extension to capture and manage links directly from your browser.",
-        image: "./myLeads.png",
+        image: "./myLeads.webp",
             tech: ["ReactJS", "TailwindCSS", "Vercel", "Manifest V3"],
                 category: "Other",
                     live: "https://my-leads-website.vercel.app/",
@@ -119,7 +119,7 @@ const projects = [
     title: "Random String Generator",
         description:
     "A secure and random password generator for creating strong, unique credentials.",
-        image: "./rsg.png",
+        image: "./rsg.webp",
             tech: ["ReactJS", "TailwindCSS", "Vercel"],
                 category: "Web",
                     live: "https://rand-str-gen.vercel.app/",
@@ -129,7 +129,7 @@ const projects = [
     title: "Todays News",
         description:
     "A news aggregator app that provides the latest headlines from various sources.",
-        image: "./todays-News.png",
+        image: "./todays-News.webp",
             tech: ["HTML", "TailwindCSS", "News API", "Vercel"],
                 category: "Web",
                     live: "https://todaysnews-zeta.vercel.app/",
@@ -139,7 +139,7 @@ const projects = [
     title: "PI Converter",
         description:
     "A tool for converting different file formats to another.",
-        image: "./pi-converter.png",
+        image: "./pi-converter.webp",
             tech: ["HTML", "CSS", "Javascript", "Vercel"],
                 category: "Web",
                     live: "https://pi-converter.vercel.app/",
@@ -195,14 +195,14 @@ const AllProjects = () => {
                 <link rel="canonical" href="https://arifbasha559.vercel.app/projects" />
             </Helmet>
             {/* Back Button */}
-            <Link
-                to="/"
+            <a
+                href="/"
                 className="fixed flex justify-center items-center top-6 left-6 z-40 p-3 bg-blue-500/20 backdrop-blur-lg rounded-full border border-blue-500/30 text-white hover:bg-blue-500/30 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)]"
             >
                 <ArrowLeft className="animate-bounce-horizontal" size={20} />
-            </Link>
+            </a>
 
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-violet-950/10 to-black" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-violet-950/50 to-black" />
 
             <div className="relative max-w-7xl mx-auto">
                 {/* Section Header */}

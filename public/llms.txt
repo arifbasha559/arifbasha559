@@ -1,0 +1,16 @@
+# Arif Basha
+
+> Full-stack developer building modern web and mobile experiences with React, Django, and MERN. Final-year BCA student targeting Software Engineer and AI/ML Engineer roles.
+
+Arif Basha is a full-stack developer with experience in React, React Native, Django, and MySQL. Currently building AnonymousDesk, a confidential professional advice mobile app, and actively developing skills toward AI/ML engineering with a focus on RAG-based systems.
+
+## Projects
+
+- [AnonymousDesk](https://github.com/arifbasha559/anonymous-desk): Confidential professional advice app — React Native/Expo frontend, Django backend, MySQL
+- [Portfolio Source](https://github.com/arifbasha559/arifbasha559): This site's source code
+
+## Contact
+
+- GitHub: https://github.com/arifbasha559
+- LinkedIn: https://www.linkedin.com/in/arifbasha559/
+- LeetCode: https://leetcode.com/u/Arifbasha559/

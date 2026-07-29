@@ -130,6 +130,7 @@ export default function Contact() {
                   <a
                     href="https://github.com/ArifBasha559"
                     target="_blank"
+                    aria-label="Arif Basha's GitHub profile"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-gradient-to-br from-blue-500/20 to-violet-500/20 rounded-lg flex items-center justify-center hover:scale-110 transition-transform hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]"
                   >

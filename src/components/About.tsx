@@ -28,7 +28,6 @@ const services = [
   },
 ];
 
-
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -40,7 +39,7 @@ export default function About() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (sectionRef.current) {
@@ -81,7 +80,12 @@ export default function About() {
             <div className="relative group">
               <div className="absolute -inset-14 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
               <div className="max-w-md relative m-auto bg-gradient-to-br from-blue-900/20 to-violet-900/20 rounded-2xl  border border-blue-500/20 overflow-hidden">
-                <img src="./Profile.jpg" className="aspect-square object-cover hover:scale-110 transition-transform duration-300 ease-in-out text-5xl font-bold text-wrap rounded-xl flex items-center justify-center"/>
+                <img
+                  src="./Profile.jpg"
+                  lazy='true'
+                  alt="Portrait of Arif Basha"
+                  className="aspect-square object-cover hover:scale-110 transition-transform duration-300 ease-in-out text-5xl font-bold text-wrap rounded-xl flex items-center justify-center"
+                />
               </div>
             </div>
           </div>
@@ -144,7 +148,7 @@ export default function About() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <div
+                <article
                   key={index}
                   className="group relative bg-gradient-to-br from-blue-900/10 to-violet-900/10 rounded-xl p-6 border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]"
                   style={{ animationDelay: `${index * 100}ms` }}
@@ -164,7 +168,7 @@ export default function About() {
                       {service.description}
                     </p>
                   </div>
-                </div>
+                </article>
               );
             })}
           </div>
@@ -173,4 +177,3 @@ export default function About() {
     </section>
   );
 }
-

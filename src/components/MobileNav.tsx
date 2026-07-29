@@ -22,9 +22,11 @@ export default function MobileNav() {
   };
 
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden z-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={isOpen}
         className="fixed top-6 right-6 z-50 p-3 bg-blue-500/20 backdrop-blur-lg rounded-full border border-blue-500/30 text-white hover:bg-blue-500/30 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)]"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -36,7 +38,7 @@ export default function MobileNav() {
             className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40"
             onClick={() => setIsOpen(false)}
           />
-          <nav className="fixed top-20 right-6 z-50 bg-black/90 backdrop-blur-lg border border-blue-500/30 rounded-2xl p-6 min-w-[200px]">
+          <nav className="fixed top-20 right-6 z-50 bg-black/90 backdrop-blur-lg border border-blue-500/30 rounded-2xl p-6 min-w-[200px]" aria-label="Mobile navigation">
             <ul className="space-y-4">
               {navItems.map((item) => {
                 const Icon = item.icon;
@@ -44,6 +46,7 @@ export default function MobileNav() {
                   <li key={item.id}>
                     <button
                       onClick={() => scrollToSection(item.id)}
+                      aria-label={`Go to ${item.label}`}
                       className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300 w-full"
                     >
                       <div className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 transition-all duration-300">
